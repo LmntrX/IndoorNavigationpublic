@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ccc" android:title="CCC" />
+    <item android:id="@+id/hod" android:title="HOD" />
+    <item android:id="@+id/restroom" android:title="Restroom"/>
+    <item android:id="@+id/exit" android:title="Exit"/>
+
+</menu>
