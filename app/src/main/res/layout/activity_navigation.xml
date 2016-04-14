@@ -25,7 +25,8 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab2"
-        android:src="@color/yellow"
+        app:backgroundTint="@color/yellow"
+        android:src="@drawable/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -34,7 +35,8 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:src="@color/green"
+        app:backgroundTint="@color/green"
+        android:src="@drawable/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
