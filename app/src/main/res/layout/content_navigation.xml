@@ -14,43 +14,7 @@
     tools:showIn="@layout/activity_navigation"
     >
 
-    <LinearLayout
-        android:background="@color/green"
-        android:weightSum="2"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_weight="1"
-            android:text="From"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_weight="1"
-            android:id="@+id/from"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:weightSum="2"
-        android:background="@color/yellow"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_weight="1"
-            android:text="To"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_weight="1"
-            android:id="@+id/to"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 
     <com.lmntrx.indoornavigation.PinView
         android:id="@+id/navigationScaleIMGVIEW"

@@ -13,23 +13,33 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 
 public class PinView extends SubsamplingScaleImageView {
 
+    Paint paint = new Paint();
+
+    private int chooseRouteInMap;
+    private int choose;
+
     private PointF sPin,sPin2;
     private Bitmap pin,pin2;
 
     public PinView(Context context) {
         this(context, null);
+        paint.setColor(Color.BLACK);
     }
 
     public PinView(Context context, AttributeSet attr) {
         super(context, attr);
+        paint.setColor(Color.BLACK);
         initialise();
     }
 
-    public void setPin(PointF sPin,PointF sPin2) {
+    public void setPin(PointF sPin,PointF sPin2,int chooseRoute) {
         this.sPin = sPin;
         this.sPin2 = sPin2;
+        this.chooseRouteInMap=chooseRoute;
         initialise();
         invalidate();
+
+
     }
 
     public PointF getPin() {
@@ -49,6 +59,8 @@ public class PinView extends SubsamplingScaleImageView {
         float w2 = (density/420f) * pin2.getWidth();
         float h2 = (density/420f) * pin2.getHeight();
         pin2 = Bitmap.createScaledBitmap(pin2, (int)w2, (int)h2, true);
+
+
 
 
     }
@@ -75,7 +87,139 @@ public class PinView extends SubsamplingScaleImageView {
             float vX2 = vPin2.x - (pin2.getWidth()/2);
             float vY2 = vPin2.y - pin2.getHeight();
             canvas.drawBitmap(pin2, vX2, vY2, paint);
+            paint.setStrokeWidth(50);
 
+
+            switch(chooseRouteInMap)
+            {
+
+                case -1: break;
+                case 0: break;
+
+                // CCC TO HOD AND BACK
+                case (R.id.ccc*10)+R.id.hod:
+
+                    canvas.drawLine(vX+50, vY+160, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.hod*10)+R.id.ccc:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // CCC TO STAFFROOM_1 AND BACK
+                case (R.id.ccc*10)+R.id.staffroom1:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.staffroom1*10)+R.id.ccc:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // CCC TO STAFFROOM_2 AND BACK
+                case (R.id.ccc*10)+R.id.staffroom2:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.staffroom2*10)+R.id.ccc:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // CCC TO RESTROOM AND BACK
+                case (R.id.ccc*10)+R.id.restroom:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.restroom*10)+R.id.ccc:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // HOD TO STAFFROOM_1 AND BACK
+                case (R.id.hod*10)+R.id.staffroom1:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.staffroom1*10)+R.id.hod:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // HOD TO STAFFROOM_2 AND BACK
+                case (R.id.hod*10)+R.id.staffroom2:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.staffroom2*10)+R.id.hod:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // HOD TO RESTROOM AND BACK
+                case (R.id.hod*10)+R.id.restroom:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.restroom*10)+R.id.hod:
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // STAFFROOM_1 To STAFFROOM_2 AND BACK
+                case (R.id.staffroom1*10)+R.id.staffroom2:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.staffroom2*10)+R.id.staffroom1:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+                // STAFFROOM_1 TO RESTROOM AND BACK
+                case (R.id.staffroom1*10)+R.id.restroom:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.restroom*10)+R.id.staffroom1:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+
+                // STAFFROOM_2 TO RESTROOM AND BACK
+                case (R.id.staffroom2*10)+R.id.restroom:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+                case (R.id.restroom*10)+R.id.staffroom2:
+
+                    canvas.drawLine(vX+50, vY+110, vX2, vY2+110, paint);
+                    break;
+
+
+            }
+
+
+            //	drawLine(float startX, float startY, float stopX, float stopY, Paint paint)
 
         }
 
