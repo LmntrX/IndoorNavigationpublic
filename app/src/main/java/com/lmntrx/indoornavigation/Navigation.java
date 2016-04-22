@@ -108,14 +108,14 @@ public class Navigation extends AppCompatActivity {
                                 fromlocation = which;
                                 chooseroute = fromlocation * 10 + tolocation;
                                 anchor_from.setText("HOD");
-                                from_PointF = new PointF(2800f, 200f);
+                                from_PointF = new PointF(2425f, 260f);
                                 imageView.setPin(from_PointF, to_PointF, chooseroute);
                                 break;
                             case R.id.restroom:
                                 fromlocation = which;
                                 chooseroute = fromlocation * 10 + tolocation;
                                 anchor_from.setText("Restroom");
-                                from_PointF = new PointF(2550f, 1675f);
+                                from_PointF = new PointF(2550f, 1750f);
                                 imageView.setPin(from_PointF, to_PointF, chooseroute);
                                 break;
                             case R.id.staffroom1:
@@ -171,14 +171,14 @@ public class Navigation extends AppCompatActivity {
                                 tolocation = which;
                                 chooseroute = fromlocation * 10 + tolocation;
                                 anchor_to.setText("HOD");
-                                to_PointF = new PointF(2800f, 200f);
+                                to_PointF = new PointF(2425f, 260f);
                                 imageView.setPin(from_PointF, to_PointF, chooseroute);
                                 break;
                             case R.id.restroom:
                                 tolocation = which;
                                 chooseroute = fromlocation * 10 + tolocation;
                                 anchor_to.setText("Restroom");
-                                to_PointF = new PointF(2550f, 1675f);
+                                to_PointF = new PointF(2550f, 1750f);
                                 imageView.setPin(from_PointF, to_PointF, chooseroute);
                                 break;
                             case R.id.staffroom1:
