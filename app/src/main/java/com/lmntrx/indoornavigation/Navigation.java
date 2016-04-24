@@ -31,6 +31,8 @@ public class Navigation extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        from_floor=1;
+        to_floor=1;
         fabDisplay();
 
 
