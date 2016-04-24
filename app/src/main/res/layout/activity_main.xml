@@ -9,16 +9,42 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.lmntrx.indoornavigation.MainActivity"
-    android:layout_gravity="center">
+    android:background="@drawable/splash"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/indoorTXT"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"
+        android:textSize="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indoor Navigation"
+         />
+
+    <TextView
+        android:id="@+id/vjcTXT"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        android:textSize="45dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viswajyothi"/>
 
     <Button
-        android:id="@+id/navigationBTN"
+        android:visibility="invisible"
+        android:id="@+id/NavigationBTN"
         android:text="Navigation"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:onClick="enterNavigation"/>
 
     <Button
+        android:visibility="invisible"
         android:text="Map"
         android:id="@+id/GalleryBTN"
         android:layout_width="175dp"
@@ -26,6 +52,7 @@
         android:onClick="enterGallery"/>
 
     <Button
+        android:visibility="invisible"
         android:text="About"
         android:id="@+id/AboutBTN"
         android:layout_width="175dp"
@@ -33,6 +60,7 @@
         android:onClick="enterAbout"/>
 
     <Button
+        android:visibility="invisible"
         android:text="Exit"
         android:id="@+id/ExitBTN"
         android:layout_width="175dp"

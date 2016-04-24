@@ -1,21 +1,95 @@
 package com.lmntrx.indoornavigation;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Fade;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class MainActivity extends Activity {
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        final TextView indoorTXT= (TextView) findViewById(R.id.indoorTXT);
+        final TextView vjcTXT= (TextView) findViewById(R.id.vjcTXT);
+
+        final Button b1= (Button) findViewById(R.id.NavigationBTN);
+        final Button b2= (Button) findViewById(R.id.GalleryBTN);
+        final Button b3= (Button) findViewById(R.id.AboutBTN);
+        final Button b4= (Button) findViewById(R.id.ExitBTN);
+
+        indoorTXT.setTranslationY(250);
+        vjcTXT.setTranslationY(250);
+
+        final Animation fadeIn = new AlphaAnimation(0, 1);
+        fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
+        fadeIn.setDuration(7000);
+
+
+
+
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                indoorTXT.animate().translationYBy(-400).setDuration(1500);
+                vjcTXT.animate().translationYBy(-400).setDuration(1500);
+
+
+
+
+
+
+
+
+            }
+        }, 2500);
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                indoorTXT.setBackgroundColor(98020101);
+                vjcTXT.setBackgroundColor(98020101);
+                b1.setVisibility(View.VISIBLE);
+                b2.setVisibility(View.VISIBLE);
+                b3.setVisibility(View.VISIBLE);
+                b4.setVisibility(View.VISIBLE);
+                b1.setAnimation(fadeIn);
+                b2.setAnimation(fadeIn);
+                b3.setAnimation(fadeIn);
+                b4.setAnimation(fadeIn);
+
+
+            }
+        }, 2600);
+
+
+
 
     }
 

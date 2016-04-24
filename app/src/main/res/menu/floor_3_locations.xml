@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/floor3_ccc" android:title="CCC" />
+    <item android:id="@+id/floor3_hod" android:title="HOD" />
+    <item android:id="@+id/floor3_staffroom1" android:title="Staff Room 1"/>
+    <item android:id="@+id/floor3_staffroom2" android:title="Staff Room 2"/>
+    <item android:id="@+id/floor3_restroom" android:title="Restroom"/>
+
+
+</menu>
