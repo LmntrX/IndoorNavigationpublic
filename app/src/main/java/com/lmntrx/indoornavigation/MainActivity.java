@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
 
         final Animation fadeIn = new AlphaAnimation(0, 1);
         fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
-        fadeIn.setDuration(7000);
+        fadeIn.setDuration(2000);
 
 
 

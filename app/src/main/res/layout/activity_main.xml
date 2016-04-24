@@ -36,6 +36,9 @@
         android:text="Viswajyothi"/>
 
     <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
         android:visibility="invisible"
         android:id="@+id/NavigationBTN"
         android:text="Navigation"
@@ -44,6 +47,9 @@
         android:onClick="enterNavigation"/>
 
     <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
         android:visibility="invisible"
         android:text="Map"
         android:id="@+id/GalleryBTN"
@@ -52,6 +58,9 @@
         android:onClick="enterGallery"/>
 
     <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
         android:visibility="invisible"
         android:text="About"
         android:id="@+id/AboutBTN"
@@ -60,6 +69,9 @@
         android:onClick="enterAbout"/>
 
     <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
         android:visibility="invisible"
         android:text="Exit"
         android:id="@+id/ExitBTN"
