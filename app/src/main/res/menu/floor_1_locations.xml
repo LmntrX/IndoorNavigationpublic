@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/ccc" android:title="CCC" />
-    <item android:id="@+id/hod" android:title="HOD" />
-    <item android:id="@+id/staffroom1" android:title="Staff Room 1"/>
-    <item android:id="@+id/staffroom2" android:title="Staff Room 2"/>
-    <item android:id="@+id/restroom" android:title="Restroom"/>
+    <item android:id="@+id/floor1_langLab" android:title="Language Lab" />
+    <item android:id="@+id/floor1_ecStaffRoom" android:title="EC Staff Room" />
+    <item android:id="@+id/floor1_ptcSeminarHall" android:title="PTC Seminar Hall" />
+    <item android:id="@+id/floor1_placementTraining" android:title="Placement Training Center" />
+    <item android:id="@+id/floor1_placementStaffRoom" android:title="Placement Staff Room" />
+    <item android:id="@+id/floor1_studentCouncil" android:title="Student Council" />
+    <item android:id="@+id/floor1_gdRoom" android:title="GD Room" />
 </menu>
 
