@@ -18,6 +18,7 @@ public class Navigation extends AppCompatActivity {
 
     PointF from_PointF, to_PointF;
     int chooseroute=-1 , fromlocation=0,tolocation=0;
+    public static int destination;
     public static int from_floor=1,to_floor=1;
 
     public static int fabControl=0;
@@ -80,6 +81,8 @@ public class Navigation extends AppCompatActivity {
 
         DroppyMenuPopup droppyMenu;
         DroppyMenuPopup.Builder droppyBuilder = new DroppyMenuPopup.Builder(this,anchor_from);
+
+
 
         droppyMenu = droppyBuilder.fromMenu(R.menu.floor_3_locations)
                 .triggerOnAnchorClick(false)
@@ -157,6 +160,7 @@ public class Navigation extends AppCompatActivity {
 
                         switch (which) {
                             case R.id.floor3_ccc:
+                                destination=R.id.floor3_ccc;
                                 tolocation = which;
                                 chooseroute = fromlocation * 10 + tolocation;
                                 anchor_to.setText("CCC");
