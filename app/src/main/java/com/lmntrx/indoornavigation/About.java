@@ -20,7 +20,17 @@ public class About extends AppCompatActivity {
         Element Mazhar = new Element();
         Mazhar.setTitle("Mazhar Ansari");
 
-        String desc="Indoor Navigation App for Viswajyothi College Of Engineering And Technology. Made with love by $$$$$$.More Description Here";
+        Element Kiran = new Element();
+        Kiran.setTitle("Kiran Tomy");
+
+        Element Anstin = new Element();
+        Anstin.setTitle("Anstin Babu");
+
+        Element Diljose = new Element();
+        Diljose.setTitle("Diljose Paul");
+
+
+        String desc="Indoor Navigation App for C Block of Viswajyothi College Of Engineering And Technology.";
 
 
 
@@ -32,6 +42,9 @@ public class About extends AppCompatActivity {
                 .addItem(versionElement)
                 .addGroup("Contributors")
                 .addItem(Mazhar)
+                .addItem(Kiran)
+                .addItem(Anstin)
+                .addItem(Diljose)
                 .create();
 
         setContentView(aboutPage);

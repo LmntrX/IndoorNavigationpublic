@@ -6,7 +6,8 @@
     <item android:id="@+id/floor2_vicePrincy" android:title="Vice Principal" />
     <item android:id="@+id/floor2_scienceDept" android:title="Science And Humanities Dept" />
     <item android:id="@+id/floor2_csStaffRoom" android:title="CS Staff Room" />
-    <item android:id="@+id/floor2_ecStaffRoom" android:title="EC Staff Room" />
+    <item android:id="@+id/floor2_ecStaffRoom1" android:title="EC Staff Room 1" />
+    <item android:id="@+id/floor2_ecStaffRoom2" android:title="EC Staff Room 2" />
     <item android:id="@+id/floor2_s8eca" android:title="S8 ECA" />
     <item android:id="@+id/floor2_s8ecb" android:title="S8 ECB" />
     <item android:id="@+id/floor2_s6eca" android:title="S6 ECA" />

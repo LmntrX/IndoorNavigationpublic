@@ -35,6 +35,7 @@ public class Navigation extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+
         from_floor=1;
         to_floor=1;
         fabDisplay();
@@ -115,7 +116,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("PTC Hall");
-                                    from_PointF = new PointF(2550f, 1750f);
+                                    from_PointF = new PointF(1000f, 1020f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                                 case R.id.floor1_placementTraining:
@@ -123,7 +124,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Placement Training Center");
-                                    from_PointF = new PointF(1800f, 2075f);
+                                    from_PointF = new PointF(1800f, 1020f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -132,7 +133,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Placement Staff Room");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(1700f, 1500f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -141,7 +142,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Student Council");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(1900f, 1600f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -150,7 +151,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("GD Room");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(2100f, 1600f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -178,7 +179,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Vice Principal");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(3550f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -187,7 +188,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Science and Humanities Dept");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(3150f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -196,15 +197,23 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("CS Staff Room");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(3000f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
-                                case R.id.floor2_ecStaffRoom:
+                                case R.id.floor2_ecStaffRoom1:
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
-                                    anchor_from.setText("EC Staff Room");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    anchor_from.setText("EC Staff Room 1");
+                                    from_PointF = new PointF(450f, 950f);
+                                    imageView.setPin(from_PointF, to_PointF, chooseroute);
+                                    break;
+
+                                case R.id.floor2_ecStaffRoom2:
+                                    fromlocation = which;
+                                    chooseroute = fromlocation * 100 + tolocation;
+                                    anchor_from.setText("EC Staff Room 2");
+                                    from_PointF = new PointF(1900f, 1550f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -213,7 +222,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S8 ECA");
-                                    from_PointF = new PointF(1800f, 2075f);
+                                    from_PointF = new PointF(1700f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -222,7 +231,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S8 EC B");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(2150f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -231,7 +240,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S6 ECA");
-                                    from_PointF = new PointF(2425f, 260f);
+                                    from_PointF = new PointF(950f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -240,7 +249,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S6 EC B");
-                                    from_PointF = new PointF(2550f, 1750f);
+                                    from_PointF = new PointF(1250f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -249,7 +258,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S4 CSB");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(2800f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -258,7 +267,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("KTU Exam Control Room");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(3230f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -267,7 +276,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("MG Exam Control Room");
-                                    from_PointF = new PointF(2620f, 800f);
+                                    from_PointF = new PointF(3550f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                             }
@@ -302,7 +311,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Mech HOD");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(3000f, 1620);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -319,7 +328,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("CS Library");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(2900f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -327,7 +336,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S8 CSA");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(950f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -335,7 +344,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S8 CSB");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(1250f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -343,7 +352,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S6 CSA");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(250f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -351,7 +360,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S6 CSB");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(550f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -359,7 +368,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S4 CSA");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(2800f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -367,7 +376,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S4 ME A");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(3550f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -375,7 +384,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("S4 ME B");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(3230f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -383,7 +392,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Seminar Hall 1");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(2650f, 260f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -391,7 +400,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Seminar Hall 2");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(3200f, 260f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -418,7 +427,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("ME Staff Room");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(3200f, 1100f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -426,7 +435,7 @@ public class Navigation extends AppCompatActivity {
                                     fromlocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_from.setText("Server Room");
-                                    from_PointF = new PointF(1650f, 1421f);
+                                    from_PointF = new PointF(2250f, 1420f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -449,7 +458,7 @@ public class Navigation extends AppCompatActivity {
         DroppyMenuPopup.Builder droppyBuilder = new DroppyMenuPopup.Builder(this,anchor_to);
 
 
-        if(from_floor==1) {
+        if(to_floor==1) {
             droppyMenu = droppyBuilder.fromMenu(R.menu.floor_1_locations)
                     .triggerOnAnchorClick(false)
                     .setOnClick(new DroppyClickCallbackInterface() {
@@ -462,7 +471,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Language Lab");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(280f, 1021f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                                 case R.id.floor1_ecStaffRoom:
@@ -470,7 +479,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("EC Staff Room");
-                                    to_PointF = new PointF(2425f, 260f);
+                                    to_PointF = new PointF(500f, 1020f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                                 case R.id.floor1_ptcSeminarHall:
@@ -478,7 +487,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("PTC Hall");
-                                    to_PointF = new PointF(2550f, 1750f);
+                                    to_PointF = new PointF(1000f, 1020f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                                 case R.id.floor1_placementTraining:
@@ -486,7 +495,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Placement Training Center");
-                                    to_PointF = new PointF(1800f, 2075f);
+                                    to_PointF = new PointF(1800f, 1020f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -495,7 +504,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Placement Staff Room");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(1700f, 1500f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -504,7 +513,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Student Council");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(1900f, 1600f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -513,7 +522,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("GD Room");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(2100f, 1600f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -527,7 +536,7 @@ public class Navigation extends AppCompatActivity {
             droppyMenu.show();
         }
 
-        else if(from_floor==2) {
+        else if(to_floor==2) {
             droppyMenu = droppyBuilder.fromMenu(R.menu.floor_2_locations)
                     .triggerOnAnchorClick(false)
                     .setOnClick(new DroppyClickCallbackInterface() {
@@ -541,7 +550,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Vice Principal");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(3550f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -549,8 +558,8 @@ public class Navigation extends AppCompatActivity {
 
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
-                                    anchor_to.setText("Science And Humanities Dept");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    anchor_to.setText("Science and Humanities Dept");
+                                    to_PointF = new PointF(3150f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -559,15 +568,23 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("CS Staff Room");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(3000f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
-                                case R.id.floor2_ecStaffRoom:
+                                case R.id.floor2_ecStaffRoom1:
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
-                                    anchor_to.setText("EC Staff Room");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    anchor_to.setText("EC Staff Room 1");
+                                    to_PointF = new PointF(450f, 950f);
+                                    imageView.setPin(from_PointF, to_PointF, chooseroute);
+                                    break;
+
+                                case R.id.floor2_ecStaffRoom2:
+                                    tolocation = which;
+                                    chooseroute = fromlocation * 100 + tolocation;
+                                    anchor_to.setText("EC Staff Room 2");
+                                    to_PointF = new PointF(1900f, 1550f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -576,7 +593,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S8 ECA");
-                                    to_PointF = new PointF(1800f, 2075f);
+                                    to_PointF = new PointF(1700f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -584,8 +601,8 @@ public class Navigation extends AppCompatActivity {
 
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
-                                    anchor_to.setText("S8 ECB");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    anchor_to.setText("S8 EC B");
+                                    to_PointF = new PointF(2150f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -594,7 +611,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S6 ECA");
-                                    to_PointF = new PointF(2425f, 260f);
+                                    to_PointF = new PointF(950f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -602,8 +619,8 @@ public class Navigation extends AppCompatActivity {
 
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
-                                    anchor_to.setText("S6 ECB");
-                                    to_PointF = new PointF(2550f, 1750f);
+                                    anchor_to.setText("S6 EC B");
+                                    to_PointF = new PointF(1250f, 950f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -612,7 +629,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S4 CSB");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(2800f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -621,7 +638,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("KTU Exam Control Room");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(3230f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -630,7 +647,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("MG Exam Control Room");
-                                    to_PointF = new PointF(2620f, 800f);
+                                    to_PointF = new PointF(3550f, 1200f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
                             }
@@ -643,7 +660,7 @@ public class Navigation extends AppCompatActivity {
             droppyMenu.show();
         }
 
-        else if(from_floor==3) {
+        else if(to_floor==3) {
             droppyMenu = droppyBuilder.fromMenu(R.menu.floor_3_locations)
                     .triggerOnAnchorClick(false)
                     .setOnClick(new DroppyClickCallbackInterface() {
@@ -665,7 +682,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Mech HOD");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(3000f, 1620);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -682,7 +699,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("CS Library");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(2900f, 700f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -690,7 +707,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S8 CSA");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(950f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -698,7 +715,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S8 CSB");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(1250f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -706,7 +723,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S6 CSA");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(250f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -714,7 +731,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S6 CSB");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(550f, 1415f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -722,7 +739,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S4 CSA");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(2800f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -730,7 +747,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S4 ME A");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(3550f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -738,7 +755,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("S4 ME B");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(3230f, 1620f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -746,7 +763,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Seminar Hall 1");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(2650f, 260f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -754,7 +771,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Seminar Hall 2");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(3200f, 260f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -781,7 +798,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("ME Staff Room");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(3200f, 1100f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -789,7 +806,7 @@ public class Navigation extends AppCompatActivity {
                                     tolocation = which;
                                     chooseroute = fromlocation * 100 + tolocation;
                                     anchor_to.setText("Server Room");
-                                    to_PointF = new PointF(1650f, 1421f);
+                                    to_PointF = new PointF(2250f, 1420f);
                                     imageView.setPin(from_PointF, to_PointF, chooseroute);
                                     break;
 
@@ -853,7 +870,6 @@ public class Navigation extends AppCompatActivity {
                 .build();
         droppyMenu.show();
     }
-
 
     public void to_floor_popup(View view) {
 
