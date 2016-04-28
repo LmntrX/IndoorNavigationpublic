@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.davemorrissey.labs.subscaleview.ImageSource;
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
@@ -32,6 +34,10 @@ public class Navigation extends AppCompatActivity {
 
     public static int fabControl=0;
 
+    final TextView textView = (TextView) findViewById(R.id.textView);
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,19 +49,22 @@ public class Navigation extends AppCompatActivity {
         floor2_Stairs1 = new PointF(1460f, 1600f);
         floor3_Stairs1 = new PointF(1600f, 1900f);
 
-        from_floor=1;
-        to_floor=1;
+        from_floor = 1;
+        to_floor = 2;
 
         fabDisplay();
 
-        final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
+        final PinView imageView = (PinView) findViewById(R.id.navigationScaleIMGVIEW);
         imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_CROP);
         imageView.setZoomEnabled(false);
         imageView.setImage(ImageSource.resource(R.drawable.map1));
 
-        chooseroute=0;
-        imageView.setPin(from_PointF,to_PointF,chooseroute);
+        chooseroute = 0;
+        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
+
     }
+
 
 
     public void from_popup(View view) {

@@ -107,45 +107,53 @@ public class PinView extends SubsamplingScaleImageView {
 
                 // -------------STAIRCASE VALUES.NEGATIVE VALUES ARE. Starting Point =Staircases-----------------
 
-                case 101:
 
-                  
+                case 101:
+                    canvas.drawLine(vX+30, vY+220, vX+530, vY+220, paint);
+
+
 
                     break;
 
                 case -101:
+                    canvas.drawLine(vX2+30, vY2+220, vX2+530, vY2+220, paint);
 
                     break;
 
                 case 102:
+                    canvas.drawLine(vX+30, vY+220, vX+470, vY+220, paint);
 
 
-                    canvas.drawLine(vX+345, vY+220, vX+345, vY-320, paint);
-                    canvas.drawLine(vX+50, vY+220, vX+370, vY+220, paint);
 
                     break;
 
                 case -102:
+                    canvas.drawLine(vX2+30, vY2+220, vX2+470, vY2+220, paint);
 
                     break;
 
                 case 103:
+                    canvas.drawLine(vX+110, vY+220, vX+220, vY+220, paint);
 
                     break;
 
                 case -103:
+                    canvas.drawLine(vX2+110, vY2+220, vX2+220, vY2+220, paint);
 
                     break;
 
                 case 104:
-
+                    canvas.drawLine(vX+50, vY+220, vX-120, vY+220, paint);
                     break;
 
                 case -104:
+                    canvas.drawLine(vX2+50, vY2+220, vX2-120, vY2+220, paint);
 
                     break;
 
                 case 105:
+
+                    canvas.drawLine(vX+50, vY+20, vX-100, vY+20, paint);
 
                     break;
 
@@ -154,14 +162,16 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
                 case 106:
+                    canvas.drawLine(vX+60, vY-20, vX-140, vY-20, paint);
 
                     break;
 
                 case -106:
 
+
                     break;
 
-                case 107:
+                case 107:  canvas.drawLine(vX+50, vY+220, vX-100, vY+220, paint);
 
                     break;
 
@@ -171,6 +181,8 @@ public class PinView extends SubsamplingScaleImageView {
 
                 case 108:
 
+                    canvas.drawLine(vX+200, vY+220, vX-100, vY+220, paint);
+
                     break;
 
                 case -108:
@@ -178,6 +190,9 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
                 case 201:
+                    canvas.drawLine(vX-400, vY+220, vX-10, vY+220, paint);
+                    canvas.drawLine(vX-400, vY+220, vX-10, vY+220, paint);
+                    canvas.drawLine(vX-400, vY+220, vX-10, vY+220, paint);
 
                     break;
 
@@ -419,6 +434,7 @@ public class PinView extends SubsamplingScaleImageView {
                 //1. Language Lab - EC Staff Room
 
                 case (R.id.floor1_langLab*100)+R.id.floor1_ecStaffRoom:
+
 
 
                     break;
@@ -1790,15 +1806,24 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //----------------------------------------- Floor 3 ---------------------------------------------------
 
-
-               // 1.       CS HOD - MECH HOD
-
+                // 1.       CS HOD - MECH HOD
 
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_meHOD:
+
+
+                    break;
+
+                case (R.id.floor3_meHOD*100)+R.id.floor3_csHOD:
+
+
+                    break;
 
 
 
-               // 2.       CS HOD - CCC
+
+
+                // 2.       CS HOD - CCC
 
 
                 // CCC TO HOD AND BACK
@@ -1819,27 +1844,34 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 3.       CS HOD - CS LIB
+                // 3.       CS HOD - CS LIB
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
-               // 4.       CS HOD - S8 CSA
 
 
 
 
 
+                // 4.       CS HOD - S8 CSA
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_csHOD:
 
 
-               // 5.       CS HOD - S8 CSB
+                    break;
 
 
 
@@ -1849,13 +1881,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 5.       CS HOD - S8 CSB
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_csHOD:
 
-               // 6.       CS HOD - S6 CSA
 
+                    break;
 
 
 
@@ -1868,14 +1904,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 6.       CS HOD - S6 CSA
 
 
-               // 7.       CS HOD - S6 CSB
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
@@ -1885,20 +1925,23 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 8.       CS HOD - S4 CSA
 
 
 
+                // 7.       CS HOD - S6 CSB
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
 
-               // 9.       CS HOD - S4 ME A
 
 
 
@@ -1908,12 +1951,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 8.       CS HOD - S4 CSA
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s4csa:
 
 
+                    break;
 
-               // 10.   CS HOD - S4 ME B
+                case (R.id.floor3_s4csa*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
@@ -1925,12 +1972,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 9.       CS HOD - S4 ME A
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s4mea:
 
-               // 11.   CS HOD - SEMINAR HALL 1
 
+                    break;
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
@@ -1938,20 +1989,75 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 12.   CS HOD -  SEMINAR HALL 2
 
 
 
 
+                // 10.   CS HOD - S4 ME B
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_s4meb:
 
 
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
-               // 13.   CS HOD -  CS STAFF ROOM 1
+
+
+
+
+
+
+
+
+
+
+                // 11.   CS HOD - SEMINAR HALL 1
+                case (R.id.floor3_csHOD*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_csHOD:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+                // 12.   CS HOD -  SEMINAR HALL 2
+                case (R.id.floor3_csHOD*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_csHOD:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+                // 13.   CS HOD -  CS STAFF ROOM 1
 
                 // HOD TO STAFFROOM_1 AND BACK
                 case (R.id.floor3_csHOD*100)+R.id.floor3_csStaffRoom1:
@@ -1973,7 +2079,7 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 14.   CS HOD - CS STAFF ROOM 2
+                // 14.   CS HOD - CS STAFF ROOM 2
 
 
 
@@ -1989,32 +2095,39 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
 
-                ///15.   CS HOD - MECH STAFFROOM
+                ///15.   CS HOD - MECH STAFFROOM
+                case (R.id.floor3_csHOD*100)+R.id.floor3_meStaffRoom:
 
 
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
 
 
-                //16.   CS HOD - SERVER ROOM  
 
 
 
 
+                //16.   CS HOD - SERVER ROOM  
 
+                case (R.id.floor3_csHOD*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_csHOD:
 
 
+                    break;
 
 
 
-               // 17.   MECH HOD - CCC
 
 
 
@@ -2023,13 +2136,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 17.   MECH HOD - CCC
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_ccc:
 
-               // 18.   MECH HOD - CS LIB
 
+                    break;
 
+                case (R.id.floor3_ccc*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2038,12 +2155,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 18.   MECH HOD - CS LIB
+                case (R.id.floor3_meHOD*100)+R.id.floor3_csLibrary:
 
-               // 19.   MECH HOD - S8 CSA
 
+                    break;
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2054,38 +2175,45 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 20.   MECH HOD - S8 CSB
 
 
+                // 19.   MECH HOD - S8 CSA
 
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
 
 
-               // 21.   MECH HOD - S6 CSA
 
 
 
 
 
 
+                // 20.   MECH HOD - S8 CSB
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
 
-               // 22.   MECH HOD - S6 CSB
 
 
 
@@ -2095,13 +2223,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 21.   MECH HOD - S6 CSA
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_meHOD:
 
-               // 23.   MECH HOD - S4 CSA
 
+                    break;
 
 
 
@@ -2115,34 +2247,41 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 24.   MECH HOD - S4 ME A
+                // 22.   MECH HOD - S6 CSB
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
 
 
 
-               // 25.   MECH HOD - S4 ME B
 
 
 
 
 
 
+                // 23.   MECH HOD - S4 CSA
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s4csa:
 
 
+                    break;
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
-               // 26.   MECH HOD - SEMINAR HALL 1
 
 
 
@@ -2154,13 +2293,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 24.   MECH HOD - S4 ME A
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s4mea:
 
-               // 27.   MECH HOD - SEMINAR HALL 2
 
+                    break;
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2170,37 +2313,44 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 28.   MECH HOD - CS STAFF ROOM 1
 
+                // 25.   MECH HOD - S4 ME B
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_s4meb:
 
 
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
 
 
 
-                //29.   MECH HOD - CS STAFF ROOM 2
 
 
 
 
 
+                // 26.   MECH HOD - SEMINAR HALL 1
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_seminarHall1:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
 
-                ///30.   MECH HOD - MECH STAFFROOM
 
 
 
@@ -2208,14 +2358,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 27.   MECH HOD - SEMINAR HALL 2
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_seminarHall2:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
-               // 31.   MECH HOD - SERVER ROOM  
 
 
 
@@ -2226,12 +2380,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 28.   MECH HOD - CS STAFF ROOM 1
+                case (R.id.floor3_meHOD*100)+R.id.floor3_csStaffRoom1:
 
 
+                    break;
 
-                //32.   CCC - CS LIB
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2244,12 +2402,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //33.   CCC - S8 CSA
+                //29.   MECH HOD - CS STAFF ROOM 2
+                case (R.id.floor3_meHOD*100)+R.id.floor3_csStaffRoom2:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2259,21 +2421,24 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //34.   CCC - S8 CSB
 
 
 
 
 
+                ///30.   MECH HOD - MECH STAFFROOM
+                case (R.id.floor3_meHOD*100)+R.id.floor3_meStaffRoom:
 
 
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
-                //35.   CCC - S6 CSA
 
 
 
@@ -2284,13 +2449,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 31.   MECH HOD - SERVER ROOM 
 
+                case (R.id.floor3_meHOD*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
-                //36.   CCC - S6 CSB
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_meHOD:
 
 
+                    break;
 
 
 
@@ -2302,12 +2471,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //32.   CCC - CS LIB
+                case (R.id.floor3_ccc*100)+R.id.floor3_csLibrary:
 
-                //37.   CCC - S4 CSA
 
+                    break;
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
@@ -2316,22 +2489,25 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //38.   CCC - S4 ME A
 
 
 
 
 
+                //33.   CCC - S8 CSA
+                case (R.id.floor3_ccc*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
 
-                //39.   CCC - S4 ME B
 
 
 
@@ -2341,13 +2517,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //34.   CCC - S8 CSB
 
+                case (R.id.floor3_ccc*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
-                //40.   CCC - SEMINAR HALL 1
+                case (R.id.floor3_s8csb*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
@@ -2359,13 +2539,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //35.   CCC - S6 CSA
 
+                case (R.id.floor3_ccc*100)+R.id.floor3_s6csa:
 
-                //41.   CCC - SEMINAR HALL 2
 
+                    break;
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
@@ -2376,7 +2560,145 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //42.   CCC - CS STAFF ROOM 1
+
+
+                //36.   CCC - S6 CSB
+
+                case (R.id.floor3_ccc*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+                //37.   CCC - S4 CSA
+                case (R.id.floor3_ccc*100)+R.id.floor3_s4csa:
+
+
+                    break;
+
+                case (R.id.floor3_s4csa*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+                //38.   CCC - S4 ME A
+                case (R.id.floor3_ccc*100)+R.id.floor3_s4mea:
+
+
+                    break;
+
+                case (R.id.floor3_s4mea*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //39.   CCC - S4 ME B
+
+                case (R.id.floor3_ccc*100)+R.id.floor3_s4meb:
+
+
+                    break;
+
+                case (R.id.floor3_s4meb*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+                //40.   CCC - SEMINAR HALL 1
+                case (R.id.floor3_ccc*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //41.   CCC - SEMINAR HALL 2
+                case (R.id.floor3_ccc*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_ccc:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //42.   CCC - CS STAFF ROOM 1
 
                 // CCC TO STAFFROOM_1 AND BACK
                 case (R.id.floor3_ccc*100)+R.id.floor3_csStaffRoom1:
@@ -2392,7 +2714,7 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
 
-                //43.   CCC - CS STAFF ROOM 2
+                //43.   CCC - CS STAFF ROOM 2
 
                 // CCC TO STAFFROOM_2 AND BACK
                 case (R.id.floor3_ccc*100)+R.id.floor3_csStaffRoom2:
@@ -2410,12 +2732,16 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
 
-                //44.   CCC - MECH STAFFROOM
+                //44.   CCC - MECH STAFFROOM
+                case (R.id.floor3_ccc*100)+R.id.floor3_meStaffRoom:
 
 
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
@@ -2425,21 +2751,24 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //45.   CCC - SERVER ROOM  
 
 
 
 
+                //45.   CCC - SERVER ROOM  
+                case (R.id.floor3_ccc*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_ccc:
 
 
+                    break;
 
 
 
 
-                ///46.   CS LIB - S8 CSA
 
 
 
@@ -2448,14 +2777,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                ///46.   CS LIB - S8 CSA
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
-                //47.   CS LIB - S8 CSB
 
 
 
@@ -2468,12 +2801,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //47.   CS LIB - S8 CSB
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_csLibrary:
 
-                ///48.   CS LIB - S6 CSA
 
+                    break;
 
 
 
@@ -2489,13 +2826,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //49.   CS LIB - S6 CSB
+                ///48.   CS LIB - S6 CSA
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2508,15 +2849,19 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 50.   CS LIB - S4 CSA
 
 
+                //49.   CS LIB - S6 CSB
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2526,7 +2871,6 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //51.   CS LIB - S4 ME A
 
 
 
@@ -2534,12 +2878,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 50.   CS LIB - S4 CSA
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s4csa:
 
 
+                    break;
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2547,7 +2896,6 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //52.   CS LIB - S4 ME B
 
 
 
@@ -2556,17 +2904,21 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //51.   CS LIB - S4 ME A
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s4mea:
 
 
+                    break;
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
 
 
-                //53.   CS LIB - SEMINAR HALL 1
 
 
 
@@ -2581,13 +2933,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //52.   CS LIB - S4 ME B
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_s4meb:
 
 
-               // 54.   CS LIB - SEMINAR HALL 2
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2604,13 +2960,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //53.   CS LIB - SEMINAR HALL 1
 
-               // 55.   CS LIB - CS STAFF ROOM 1
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_seminarHall1:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2624,21 +2984,24 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 56.   CS LIB - CS STAFF ROOM 2
 
 
+                // 54.   CS LIB - SEMINAR HALL 2
 
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_seminarHall2:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
 
 
-                //57.   CS LIB - MECH STAFFROOM
 
 
 
@@ -2652,12 +3015,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                // 55.   CS LIB - CS STAFF ROOM 1
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_csStaffRoom1:
 
-                //58.   CS LIB - SERVER ROOM  
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2674,13 +3041,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //59.   S8 CSA - S8 CSB
 
+                // 56.   CS LIB - CS STAFF ROOM 2
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_csStaffRoom2:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2689,16 +3060,20 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //60.   S8 CSA - S6 CSA
 
 
 
 
+                //57.   CS LIB - MECH STAFFROOM
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_meStaffRoom:
 
 
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2711,13 +3086,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //61.   S8 CSA - S6 CSB
 
+                //58.   CS LIB - SERVER ROOM  
+                case (R.id.floor3_csLibrary*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_csLibrary:
 
 
+                    break;
 
 
 
@@ -2728,7 +3107,6 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //62.   S8 CSA - S4 CSA
 
 
 
@@ -2738,14 +3116,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //59.   S8 CSA - S8 CSB
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
-                //63.   S8 CSA - S4 ME A
 
 
 
@@ -2757,13 +3139,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //60.   S8 CSA - S6 CSA
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
-                //64.   S8 CSA - S4 ME B
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
@@ -2776,7 +3162,6 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //65.   S8 CSA - SEMINAR HALL 1
 
 
 
@@ -2784,16 +3169,20 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //61.   S8 CSA - S6 CSB
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
 
-                //66.   S8 CSA - SEMINAR HALL 2
 
 
 
@@ -2805,12 +3194,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //62.   S8 CSA - S4 CSA
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s4csa:
 
 
+                    break;
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s8csa:
 
-                //67.   S8 CSA - CS STAFF ROOM 1
 
+                    break;
 
 
 
@@ -2823,23 +3216,26 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //68.   S8 CSA - CS STAFF ROOM 2
 
 
 
+                //63.   S8 CSA - S4 ME A
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s4mea:
 
 
+                    break;
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
 
 
 
-                //69.   S8 CSA - MECH STAFFROOM
 
 
 
@@ -2847,12 +3243,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //64.   S8 CSA - S4 ME B
+                case (R.id.floor3_s8csa*100)+R.id.floor3_s4meb:
 
 
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s8csa:
 
 
-                //70.   S8 CSA - SERVER ROOM  
+                    break;
 
 
 
@@ -2866,12 +3266,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //65.   S8 CSA - SEMINAR HALL 1
+                case (R.id.floor3_s8csa*100)+R.id.floor3_seminarHall1:
 
-                ///71.   S8 CSB- S6 CSA
 
+                    break;
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
@@ -2882,20 +3286,23 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //72.   S8 CSB- S6 CSB
 
 
 
 
 
+                //66.   S8 CSA - SEMINAR HALL 2
+                case (R.id.floor3_s8csa*100)+R.id.floor3_seminarHall2:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
-                //73.   S8 CSB- S4 CSA
 
 
 
@@ -2906,20 +3313,23 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //74.   S8 CSB- S4 ME A
 
 
+                //67.   S8 CSA - CS STAFF ROOM 1
+                case (R.id.floor3_s8csa*100)+R.id.floor3_csStaffRoom1:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
 
 
-                //75.   S8 CSB- S4 ME B
 
 
 
@@ -2927,14 +3337,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //68.   S8 CSA - CS STAFF ROOM 2
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_csStaffRoom2:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
-                //76.   S8 CSB- SEMINAR HALL 1
 
 
 
@@ -2947,13 +3361,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //69.   S8 CSA - MECH STAFFROOM
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_meStaffRoom:
 
 
-                //77.   S8 CSB- SEMINAR HALL 2
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
@@ -2964,13 +3382,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //78.   S8 CSB- CS STAFF ROOM 1
+                //70.   S8 CSA - SERVER ROOM  
 
+                case (R.id.floor3_s8csa*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s8csa:
 
 
+                    break;
 
 
 
@@ -2978,23 +3400,26 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //79.   S8 CSB- CS STAFF ROOM 2
 
 
 
 
 
+                ///71.   S8 CSB- S6 CSA
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
 
 
-                //80.   S8 CSB- MECH STAFFROOM
 
 
 
@@ -3003,14 +3428,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //72.   S8 CSB- S6 CSB
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
-                //81.   S8 CSB- SERVER ROOM  
 
 
 
@@ -3021,14 +3450,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //73.   S8 CSB- S4 CSA
 
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s4csa:
 
 
-                //82.   S6 CSA- S6 CSB
+                    break;
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3037,14 +3470,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //74.   S8 CSB- S4 ME A
 
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s4mea:
 
 
-                //83.   S6 CSA- S4 CSA
+                    break;
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3055,13 +3492,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //75.   S8 CSB- S4 ME B
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_s4meb:
 
-                //84.   S6 CSA- S4 ME A
 
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3075,13 +3516,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //85.   S6 CSA- S4 ME B
+                //76.   S8 CSB- SEMINAR HALL 1
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_seminarHall1:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3091,23 +3536,26 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //86.   S6 CSA- SEMINAR HALL 1
 
 
 
 
 
+                //77.   S8 CSB- SEMINAR HALL 2
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_seminarHall2:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
 
-                //87.   S6 CSA- SEMINAR HALL 2
 
 
 
@@ -3115,12 +3563,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //78.   S8 CSB- CS STAFF ROOM 1
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_csStaffRoom1:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3128,21 +3581,24 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //88.   S6 CSA- CS STAFF ROOM 1
 
 
 
 
 
+                //79.   S8 CSB- CS STAFF ROOM 2
 
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_csStaffRoom2:
 
 
+                    break;
 
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
-                //89.   S6 CSA- CS STAFF ROOM 2
 
 
 
@@ -3155,13 +3611,17 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //80.   S8 CSB- MECH STAFFROOM
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_meStaffRoom:
 
 
+                    break;
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s8csb:
 
-                //90.   S6 CSA- MECH STAFFROOM
 
+                    break;
 
 
 
@@ -3175,15 +3635,19 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //91.   S6 CSA- SERVER ROOM  
 
+                //81.   S8 CSB- SERVER ROOM  
 
 
+                case (R.id.floor3_s8csb*100)+R.id.floor3_serverRoom:
 
 
+                    break;
 
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s8csb:
 
 
+                    break;
 
 
 
@@ -3193,24 +3657,27 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //92.   S6 CSB- S4 CSA
 
 
 
+                //82.   S6 CSA- S6 CSB
 
 
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s6csb:
 
 
+                    break;
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
 
 
 
 
-                //93.   S6 CSB- S4 ME A
 
 
 
@@ -3218,14 +3685,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //83.   S6 CSA- S4 CSA
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s4csa:
 
 
+                    break;
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
-                //94.   S6 CSB- S4 ME B
 
 
 
@@ -3238,12 +3709,16 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //84.   S6 CSA- S4 ME A
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s4mea:
 
 
+                    break;
 
-                //95.   S6 CSB- SEMINAR HALL 1
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
 
@@ -3257,15 +3732,19 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //96.   S6 CSB- SEMINAR HALL 2
 
 
 
+                //85.   S6 CSA- S4 ME B
+                case (R.id.floor3_s6csa*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
 
@@ -3274,24 +3753,27 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                //97.   S6 CSB- CS STAFF ROOM 1
 
 
 
 
 
 
+                //86.   S6 CSA- SEMINAR HALL 1
+                case (R.id.floor3_s6csa*100)+R.id.floor3_seminarHall1:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
 
 
 
-                ///98.   S6 CSB- CS STAFF ROOM 2
 
 
 
@@ -3301,17 +3783,320 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                //87.   S6 CSA- SEMINAR HALL 2
+                case (R.id.floor3_s6csa*100)+R.id.floor3_seminarHall2:
 
 
+                    break;
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s6csa:
 
 
+                    break;
 
 
 
-                //99.   S6 CSB- MECH STAFFROOM
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //88.   S6 CSA- CS STAFF ROOM 1
+                case (R.id.floor3_s6csa*100)+R.id.floor3_csStaffRoom1:
+
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s6csa:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+                //89.   S6 CSA- CS STAFF ROOM 2
+                case (R.id.floor3_s6csa*100)+R.id.floor3_csStaffRoom2:
+
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s6csa:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //90.   S6 CSA- MECH STAFFROOM
+                case (R.id.floor3_s6csa*100)+R.id.floor3_meStaffRoom:
+
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s6csa:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //91.   S6 CSA- SERVER ROOM  
+                case (R.id.floor3_s6csa*100)+R.id.floor3_serverRoom:
+
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s6csa:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //92.   S6 CSB- S4 CSA
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s4csa:
+
+
+                    break;
+
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //93.   S6 CSB- S4 ME A
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s4mea:
+
+
+                    break;
+
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+                //94.   S6 CSB- S4 ME B
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_s4meb:
+
+
+                    break;
+
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //95.   S6 CSB- SEMINAR HALL 1
+
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //96.   S6 CSB- SEMINAR HALL 2
+
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //97.   S6 CSB- CS STAFF ROOM 1
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_csStaffRoom1:
+
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ///98.   S6 CSB- CS STAFF ROOM 2
+
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_csStaffRoom2:
+
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s6csb:
+
+
+                    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //99.   S6 CSB- MECH STAFFROOM
+
+
+                case (R.id.floor3_s6csb*100)+R.id.floor3_meStaffRoom:
+
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s6csb:
+
+
+                    break;
 
 
 
@@ -3328,6 +4113,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //100.S6 CSB- SERVER ROOM  
 
+                case (R.id.floor3_s6csb*100)+R.id.floor3_serverRoom:
+
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s6csb:
+
+
+                    break;
 
 
 
@@ -3348,7 +4142,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //101.S4 CSA- S4 ME A
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s4mea:
 
+
+                    break;
+
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3360,7 +4162,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //102.S4 CSA- S4 ME B
+                case (R.id.floor3_s4csa*100)+R.id.floor3_s4meb:
 
+
+                    break;
+
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3378,7 +4188,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //103.S4 CSA- SEMINAR HALL 1
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_seminarHall1:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3394,7 +4212,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //104.S4 CSA- SEMINAR HALL 2
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_seminarHall2:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3411,7 +4237,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //105.S4 CSA- CS STAFF ROOM 1
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_csStaffRoom1:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3430,7 +4264,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //106.S4 CSA- CS STAFF ROOM 2
+                case (R.id.floor3_s4csa*100)+R.id.floor3_csStaffRoom2:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3446,7 +4288,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //107.S4 CSA- MECH STAFFROOM
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3462,7 +4312,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //108.S4 CSA- SERVER ROOM  
 
+                case (R.id.floor3_s4csa*100)+R.id.floor3_serverRoom:
 
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s4csa:
+
+
+                    break;
 
 
 
@@ -3477,7 +4335,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //109.S4 ME A- S4 ME B
+                case (R.id.floor3_s4mea*100)+R.id.floor3_s4meb:
 
+
+                    break;
+
+                case (R.id.floor3_s4meb*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3492,7 +4358,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //110.S4 ME A- SEMINAR HALL 1
+                case (R.id.floor3_s4mea*100)+R.id.floor3_seminarHall1:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3506,7 +4380,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //111.S4 ME A- SEMINAR HALL 2
+                case (R.id.floor3_s4mea*100)+R.id.floor3_seminarHall2:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3524,7 +4406,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //112.S4 ME A- CS STAFF ROOM 1
+                case (R.id.floor3_s4mea*100)+R.id.floor3_csStaffRoom1:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3541,7 +4431,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //113.S4 ME A- CS STAFF ROOM 2
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_csStaffRoom2:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3558,7 +4456,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //114.S4 ME A- MECH STAFFROOM
+                case (R.id.floor3_s4mea*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3580,7 +4486,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //115.S4 ME A- SERVER ROOM  
 
+                case (R.id.floor3_s4mea*100)+R.id.floor3_serverRoom:
 
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s4mea:
+
+
+                    break;
 
 
 
@@ -3596,7 +4510,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //116.S4 ME B- SEMINAR HALL 1
+                case (R.id.floor3_s4meb*100)+R.id.floor3_seminarHall1:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3615,7 +4537,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //117.S4 ME B- SEMINAR HALL 2
+                case (R.id.floor3_s4meb*100)+R.id.floor3_seminarHall2:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3640,7 +4570,15 @@ public class PinView extends SubsamplingScaleImageView {
                 //118.S4 ME B- CS STAFF ROOM 1
 
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_csStaffRoom1:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3657,7 +4595,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //119.S4 ME B- CS STAFF ROOM 2
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_csStaffRoom2:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3677,7 +4623,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //120.S4 ME B- MECH STAFFROOM
+                case (R.id.floor3_s4meb*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3698,7 +4652,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //121.S4 ME B- SERVER ROOM  
 
+                case (R.id.floor3_s4meb*100)+R.id.floor3_serverRoom:
 
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_s4meb:
+
+
+                    break;
 
 
 
@@ -3717,7 +4679,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //122.SEMINAR HALL 1- SEMINAR HALL 2
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_seminarHall2:
 
+
+                    break;
+
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
 
 
 
@@ -3734,7 +4704,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //123.SEMINAR HALL 1- CS STAFF ROOM 1
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_csStaffRoom1:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
 
 
 
@@ -3753,7 +4731,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //124.SEMINAR HALL 1- CS STAFF ROOM 2
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_csStaffRoom2:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
 
 
 
@@ -3771,7 +4757,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //125.SEMINAR HALL 1- MECH STAFFROOM
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
 
 
 
@@ -3789,7 +4783,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //126.SEMINAR HALL 1- SERVER ROOM  
 
+                case (R.id.floor3_seminarHall1*100)+R.id.floor3_serverRoom:
 
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_seminarHall1:
+
+
+                    break;
 
 
 
@@ -3810,7 +4812,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //127.SEMINAR HALL 2- CS STAFF ROOM 1
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_csStaffRoom1:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
 
 
 
@@ -3831,7 +4841,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //128.SEMINAR HALL 2- CS STAFF ROOM 2
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_csStaffRoom2:
 
+
+                    break;
+
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
 
 
 
@@ -3844,7 +4862,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //129.SEMINAR HALL 2- MECH STAFFROOM
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
 
 
 
@@ -3863,7 +4889,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //130.SEMINAR HALL 2- SERVER ROOM  
 
+                case (R.id.floor3_seminarHall2*100)+R.id.floor3_serverRoom:
 
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_seminarHall2:
+
+
+                    break;
 
 
 
@@ -3902,7 +4936,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //132.CS STAFF ROOM 1- MECH STAFFROOM
 
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_meStaffRoom:
 
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csStaffRoom1:
+
+
+                    break;
 
 
 
@@ -3915,6 +4957,15 @@ public class PinView extends SubsamplingScaleImageView {
 
 
                 //133.CS STAFF ROOM 1- SERVER ROOM  
+                case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_serverRoom:
+
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_csStaffRoom1:
+
+
+                    break;
 
 
 
@@ -3930,7 +4981,18 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-               // 134.CS STAFF ROOM 2- MECH STAFFROOM
+
+                // 134.CS STAFF ROOM 2- MECH STAFFROOM
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_meStaffRoom:
+
+
+                    break;
+
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csStaffRoom2:
+
+
+                    break;
+
 
 
 
@@ -3947,6 +5009,16 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //135.CS STAFF ROOM 2- SERVER ROOM  
 
+                case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_serverRoom:
+
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_csStaffRoom2:
+
+
+                    break;
+
 
 
 
@@ -3962,12 +5034,24 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //136.MECH STAFFROOM- SERVER ROOM 
 
+                case (R.id.floor3_meStaffRoom*100)+R.id.floor3_serverRoom:
+
+
+                    break;
+
+                case (R.id.floor3_serverRoom*100)+R.id.floor3_meStaffRoom:
+
+
+                    break;
 
 
 
 
 
-                // --------------------------------------------------------------------------------------------
+                /// -----------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 

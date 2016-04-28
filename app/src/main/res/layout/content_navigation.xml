@@ -15,7 +15,6 @@
     >
 
 
-
     <com.lmntrx.indoornavigation.PinView
         android:id="@+id/navigationScaleIMGVIEW"
         android:layout_width="match_parent"
