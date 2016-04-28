@@ -4502,11 +4502,14 @@ public class PinView extends SubsamplingScaleImageView {
                 //101.S4 CSA- S4 ME A
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_s4mea:
+                     canvas.drawLine(vX+50,vY,vX+325,vY,paint);
+
 
 
                     break;
 
                 case (R.id.floor3_s4mea*100)+R.id.floor3_s4csa:
+                    canvas.drawLine(vX2+50,vY2,vX2+325,vY2,paint);
 
 
                     break;
@@ -4522,11 +4525,13 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //102.S4 CSA- S4 ME B
                 case (R.id.floor3_s4csa*100)+R.id.floor3_s4meb:
+                    canvas.drawLine(vX+50,vY,vX+325-75,vY,paint);
 
 
                     break;
 
                 case (R.id.floor3_s4meb*100)+R.id.floor3_s4csa:
+                    canvas.drawLine(vX2+50,vY2,vX2+325-75,vY2,paint);
 
 
                     break;
@@ -4548,13 +4553,17 @@ public class PinView extends SubsamplingScaleImageView {
                 //103.S4 CSA- SEMINAR HALL 1
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_seminarHall1:
+                    canvas.drawLine(vX,vY,vX-150,vY,paint);
+                    canvas.drawLine(vX-120,vY+10,vX-120,vY-430,paint);
+                    canvas.drawLine(vX-120,vY-405,vX+100,vY-405,paint);
 
 
                     break;
 
                 case (R.id.floor3_seminarHall1*100)+R.id.floor3_s4csa:
-
-
+                    canvas.drawLine(vX2,vY2,vX2-150,vY2,paint);
+                    canvas.drawLine(vX2-120,vY2+10,vX2-120,vY2-430,paint);
+                    canvas.drawLine(vX2-120,vY2-405,vX2+100,vY2-405,paint);
                     break;
 
 
@@ -4572,13 +4581,15 @@ public class PinView extends SubsamplingScaleImageView {
                 //104.S4 CSA- SEMINAR HALL 2
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_seminarHall2:
-
-
+                    canvas.drawLine(vX,vY,vX-150,vY,paint);
+                    canvas.drawLine(vX-120,vY+10,vX-120,vY-430,paint);
+                    canvas.drawLine(vX-120,vY-405,vX+200,vY-405,paint);
                     break;
 
                 case (R.id.floor3_seminarHall2*100)+R.id.floor3_s4csa:
-
-
+                    canvas.drawLine(vX2,vY2,vX2-150,vY2,paint);
+                    canvas.drawLine(vX2-120,vY2+10,vX2-120,vY2-430,paint);
+                    canvas.drawLine(vX2-120,vY2-405,vX2+200,vY2-405,paint);
                     break;
 
 
@@ -4597,13 +4608,18 @@ public class PinView extends SubsamplingScaleImageView {
                 //105.S4 CSA- CS STAFF ROOM 1
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_csStaffRoom1:
+                    canvas.drawLine(vX,vY,vX-150,vY,paint);
+                    canvas.drawLine(vX-135,vY-25,vX-135,vY+160,paint);
+                     canvas.drawLine(vX-120,vY+135,vX-200,vY+135,paint);
+
 
 
                     break;
 
                 case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_s4csa:
-
-
+                    canvas.drawLine(vX2,vY2,vX2-150,vY2,paint);
+                    canvas.drawLine(vX2-135,vY2-25,vX2-135,vY2+160,paint);
+                     canvas.drawLine(vX2-120,vY2+135,vX2-200,vY2+135,paint);
                     break;
 
 
@@ -4624,13 +4640,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //106.S4 CSA- CS STAFF ROOM 2
                 case (R.id.floor3_s4csa*100)+R.id.floor3_csStaffRoom2:
-
-
+                    canvas.drawLine(vX,vY,vX-150,vY,paint);
+                    canvas.drawLine(vX-120,vY+10,vX-120,vY-430,paint);
+                    canvas.drawLine(vX-120,vY-405,vX-50,vY-405,paint);
                     break;
 
                 case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_s4csa:
-
-
+                    canvas.drawLine(vX2,vY2,vX2-150,vY2,paint);
+                    canvas.drawLine(vX2-130,vY2+10,vX2-130,vY2-430,paint);
+                    canvas.drawLine(vX2-120,vY2-405,vX2-50,vY2-405,paint);
                     break;
 
 
@@ -4648,12 +4666,13 @@ public class PinView extends SubsamplingScaleImageView {
                 //107.S4 CSA- MECH STAFFROOM
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_meStaffRoom:
+                    canvas.drawLine(vX,vY,vX+380,vY,paint);
 
 
                     break;
 
                 case (R.id.floor3_meStaffRoom*100)+R.id.floor3_s4csa:
-
+                           canvas.drawLine(vX2,vY2,vX2+380,vY2,paint);
 
                     break;
 
@@ -4672,13 +4691,15 @@ public class PinView extends SubsamplingScaleImageView {
                 //108.S4 CSA- SERVER ROOM  
 
                 case (R.id.floor3_s4csa*100)+R.id.floor3_serverRoom:
-
-
+                    canvas.drawLine(vX,vY,vX-150,vY,paint);
+                    canvas.drawLine(vX-135,vY-25,vX-135,vY+160,paint);
+                     canvas.drawLine(vX-120,vY+135,vX-200,vY+135,paint);
                     break;
 
                 case (R.id.floor3_serverRoom*100)+R.id.floor3_s4csa:
-
-
+                    canvas.drawLine(vX2,vY2,vX2-150,vY2,paint);
+                    canvas.drawLine(vX2-135,vY2-25,vX2-135,vY2+160,paint);
+                     canvas.drawLine(vX2-120,vY2+135,vX2-200,vY2+135,paint);
                     break;
 
 
@@ -4695,11 +4716,13 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //109.S4 ME A- S4 ME B
                 case (R.id.floor3_s4mea*100)+R.id.floor3_s4meb:
+                    canvas.drawLine(vX,vY,vX-100,vY,paint);
 
 
                     break;
 
                 case (R.id.floor3_s4meb*100)+R.id.floor3_s4mea:
+                    canvas.drawLine(vX2,vY2,vX2-100,vY2,paint);
 
 
                     break;
@@ -5375,13 +5398,17 @@ public class PinView extends SubsamplingScaleImageView {
                 //132.CS STAFF ROOM 1- MECH STAFFROOM
 
                 case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_meStaffRoom:
+                     canvas.drawLine(vX+20, vY-50, vX+300, vY-50, paint);
+                     canvas.drawLine(vX+275, vY-50, vX+275, vY-200, paint);
+                    canvas.drawLine(vX+275, vY-175, vX+700, vY-175, paint);
 
 
                     break;
 
                 case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csStaffRoom1:
-
-
+                     canvas.drawLine(vX2+20, vY2-50, vX2+300, vY2-50, paint);
+                     canvas.drawLine(vX2+275, vY2-50, vX2+275, vY2-200, paint);
+                    canvas.drawLine(vX2+275, vY2-175, vX2+700, vY2-175, paint);
                     break;
 
 
@@ -5396,11 +5423,13 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //133.CS STAFF ROOM 1- SERVER ROOM  
                 case (R.id.floor3_csStaffRoom1*100)+R.id.floor3_serverRoom:
+                    canvas.drawLine(vX+20, vY-50, vX+40, vY-50, paint);
 
 
                     break;
 
                 case (R.id.floor3_serverRoom*100)+R.id.floor3_csStaffRoom1:
+                    canvas.drawLine(vX2+20, vY2-50, vX2+40, vY2-50, paint);
 
 
                     break;
@@ -5422,13 +5451,17 @@ public class PinView extends SubsamplingScaleImageView {
 
                 // 134.CS STAFF ROOM 2- MECH STAFFROOM
                 case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_meStaffRoom:
+                    canvas.drawLine(vX, vY-50, vX-80, vY-50, paint);
+                    canvas.drawLine(vX-65, vY-50, vX-65, vY+350, paint);
+                    canvas.drawLine(vX-80, vY+350, vX+450, vY+350, paint);
 
 
                     break;
 
                 case (R.id.floor3_meStaffRoom*100)+R.id.floor3_csStaffRoom2:
-
-
+                    canvas.drawLine(vX2, vY2-50, vX2-80, vY2-50, paint);
+                    canvas.drawLine(vX2-65, vY2-50, vX2-65, vY2+350, paint);
+                    canvas.drawLine(vX2-80, vY2+350, vX2+450, vY2+350, paint);
                     break;
 
 
@@ -5448,13 +5481,17 @@ public class PinView extends SubsamplingScaleImageView {
                 //135.CS STAFF ROOM 2- SERVER ROOM  
 
                 case (R.id.floor3_csStaffRoom2*100)+R.id.floor3_serverRoom:
+                    canvas.drawLine(vX, vY-50, vX-90, vY-50, paint);
+                    canvas.drawLine(vX-65, vY-50, vX-65, vY+500, paint);
+                    canvas.drawLine(vX-45, vY+500, vX-115, vY+500, paint);
 
 
                     break;
 
                 case (R.id.floor3_serverRoom*100)+R.id.floor3_csStaffRoom2:
-
-
+                    canvas.drawLine(vX2, vY2-50, vX2-90, vY2-50, paint);
+                    canvas.drawLine(vX2-65, vY2-50, vX2-65, vY2+500, paint);
+                    canvas.drawLine(vX2-45, vY2+500, vX2-115, vY2+500, paint);
                     break;
 
 
@@ -5473,13 +5510,17 @@ public class PinView extends SubsamplingScaleImageView {
                 //136.MECH STAFFROOM- SERVER ROOM 
 
                 case (R.id.floor3_meStaffRoom*100)+R.id.floor3_serverRoom:
+                     canvas.drawLine(vX+20, vY+250, vX-320, vY+250, paint) ;
+                    canvas.drawLine(vX-320, vY+225, vX-320, vY+390, paint) ;
+                    canvas.drawLine(vX-320, vY+380, vX-380, vY+380, paint) ;
 
 
                     break;
 
                 case (R.id.floor3_serverRoom*100)+R.id.floor3_meStaffRoom:
-
-
+                     canvas.drawLine(vX2+20, vY2+250, vX2-320, vY2+250, paint) ;
+                    canvas.drawLine(vX2-320, vY2+225, vX2-320, vY2+390, paint) ;
+                    canvas.drawLine(vX2-320, vY2+380, vX2-380, vY2+380, paint) ;
                     break;
 
 
