@@ -21,24 +21,16 @@ public class Navigation extends AppCompatActivity {
     PointF from_PointF=new PointF(800f,400f);
     PointF to_PointF=new PointF(300f, 400f);
     PointF original_to_PointF,original_from_PointF;
-    PointF floor1_Stairs1,floor1_Stairs2,floor1_Stairs3;
-    PointF floor2_Stairs1,floor2_Stairs2,floor2_Stairs3;
-    PointF floor3_Stairs1,floor3_Stairs2,floor3_Stairs3;
+    PointF floor1_Stairs1;
+    PointF floor2_Stairs1;
+    PointF floor3_Stairs1;
+
     public View thisview;
 
-    int chooseMenu;
-
-
-
     public static int chooseroute=-1 , fromlocation=0,tolocation=0;
-    public static int destination;
     public static int from_floor=1,to_floor=1;
 
     public static int fabControl=0;
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,49 +39,22 @@ public class Navigation extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         floor1_Stairs1 = new PointF(1460f, 1600f);
         floor2_Stairs1 = new PointF(1460f, 1600f);
         floor3_Stairs1 = new PointF(1600f, 1900f);
 
         from_floor=1;
         to_floor=1;
+
         fabDisplay();
-
-
-
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
         imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_CROP);
         imageView.setZoomEnabled(false);
         imageView.setImage(ImageSource.resource(R.drawable.map1));
 
-/*
-    CCC = PointF(1650f, 1421f)
-    HOD = PointF(2800f, 200f)
-    Restroom = PointF(2550f,1675f)
-    Staff Room 1 = PointF(1800f,2075f)
-    Staff Room 2 = PointF(2620f, 800f)
-
-    Green Start =  PointF(2800f, 200f)
-    Yellow Start =  PointF(2800f, 200f)
-
- */
-
-
-
-
-
+        chooseroute=0;
         imageView.setPin(from_PointF,to_PointF,chooseroute);
-
-
-
-
-
-
-
-
-
     }
 
 
@@ -131,34 +96,9 @@ public class Navigation extends AppCompatActivity {
 
 
                                         from_PointF = new PointF(280f, 1021f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                            to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_ecStaffRoom:
 
@@ -167,34 +107,9 @@ public class Navigation extends AppCompatActivity {
                                         anchor_from.setText("EC Staff Room");
                                         from_PointF = new PointF(500f, 1020f);
 
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_ptcSeminarHall:
 
@@ -203,34 +118,9 @@ public class Navigation extends AppCompatActivity {
                                         anchor_from.setText("PTC Hall");
                                         from_PointF = new PointF(1000f, 1020f);
 
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_placementTraining:
 
@@ -238,34 +128,9 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Placement Training Center");
                                         from_PointF = new PointF(1800f, 1020f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor1_placementStaffRoom:
@@ -274,34 +139,8 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Placement Staff Room");
                                         from_PointF = new PointF(1700f, 1500f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor1_studentCouncil:
@@ -310,34 +149,9 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Student Council");
                                         from_PointF = new PointF(1900f, 1600f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor1_gdRoom:
@@ -346,37 +160,16 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("GD Room");
                                         from_PointF = new PointF(2100f, 1600f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                 }
+
+                                chooseroute=0;
+                                imageView.setPin(from_PointF, to_PointF, chooseroute);
                             }
                         })
                         .setPopupAnimation(new DroppyFadeInAnimation())
@@ -401,34 +194,9 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Vice Principal");
                                         from_PointF = new PointF(3550f, 700f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_scienceDept:
@@ -437,7 +205,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Science and Humanities Dept");
                                         from_PointF = new PointF(3150f, 700f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor2_csStaffRoom:
@@ -447,33 +215,9 @@ public class Navigation extends AppCompatActivity {
                                         anchor_from.setText("CS Staff Room");
                                         from_PointF = new PointF(3000f, 1200f);
                                         original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
 
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_ecStaffRoom1:
@@ -481,7 +225,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("EC Staff Room 1");
                                         from_PointF = new PointF(450f, 950f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor2_ecStaffRoom2:
@@ -489,34 +233,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("EC Staff Room 2");
                                         from_PointF = new PointF(1900f, 1550f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_s8eca:
@@ -525,7 +242,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S8 ECA");
                                         from_PointF = new PointF(1700f, 950f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor2_s8ecb:
@@ -534,34 +251,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S8 EC B");
                                         from_PointF = new PointF(2150f, 950f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_s6eca:
@@ -570,34 +260,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S6 ECA");
                                         from_PointF = new PointF(950f, 950f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_s6ecb:
@@ -606,7 +269,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S6 EC B");
                                         from_PointF = new PointF(1250f, 950f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor2_s4csb:
@@ -615,34 +278,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S4 CSB");
                                         from_PointF = new PointF(2800f, 1200f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_ktu:
@@ -651,34 +287,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("KTU Exam Control Room");
                                         from_PointF = new PointF(3230f, 1200f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor2_mg:
@@ -687,43 +296,21 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("MG Exam Control Room");
                                         from_PointF = new PointF(3550f, 1200f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                 }
+                                chooseroute=0;
+                                imageView.setPin(from_PointF, to_PointF, chooseroute);
                             }
+
+
                         })
                         .setPopupAnimation(new DroppyFadeInAnimation())
                         .setXOffset(-6)
                         .setYOffset(5)
                         .build();
                 droppyMenu.show();
+
             } else if (from_floor == 3) {
                 droppyMenu = droppyBuilder.fromMenu(R.menu.floor_3_locations)
                         .triggerOnAnchorClick(false)
@@ -742,34 +329,7 @@ public class Navigation extends AppCompatActivity {
                                         anchor_from.setText("CS HOD");
 
                                         from_PointF = new PointF(2425f, 260f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_meHOD:
@@ -780,31 +340,7 @@ public class Navigation extends AppCompatActivity {
                                         original_from_PointF=from_PointF;
                                         original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
 
@@ -813,34 +349,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("CCC");
                                         from_PointF = new PointF(1650f, 1421f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_csLibrary:
@@ -848,34 +357,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("CS Library");
                                         from_PointF = new PointF(2900f, 700f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s8csa:
@@ -883,34 +365,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S8 CSA");
                                         from_PointF = new PointF(950f, 1415f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s8csb:
@@ -918,34 +373,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S8 CSB");
                                         from_PointF = new PointF(1250f, 1415f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s6csa:
@@ -953,7 +381,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S6 CSA");
                                         from_PointF = new PointF(250f, 1415f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor3_s6csb:
@@ -961,34 +389,8 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S6 CSB");
                                         from_PointF = new PointF(550f, 1415f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
 
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s4csa:
@@ -996,34 +398,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S4 CSA");
                                         from_PointF = new PointF(2800f, 1620f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s4mea:
@@ -1031,7 +406,6 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S4 ME A");
                                         from_PointF = new PointF(3550f, 1620f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_s4meb:
@@ -1039,34 +413,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("S4 ME B");
                                         from_PointF = new PointF(3230f, 1620f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_seminarHall1:
@@ -1074,7 +421,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Seminar Hall 1");
                                         from_PointF = new PointF(2650f, 260f);
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
+
                                         break;
 
                                     case R.id.floor3_seminarHall2:
@@ -1082,34 +429,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Seminar Hall 2");
                                         from_PointF = new PointF(3200f, 260f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
 
@@ -1119,34 +439,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("CS Staff Room 1");
                                         from_PointF = new PointF(1800f, 2075f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_csStaffRoom2:
@@ -1155,34 +448,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("CS Staff Room 2");
                                         from_PointF = new PointF(2620f, 800f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_meStaffRoom:
@@ -1190,34 +456,7 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("ME Staff Room");
                                         from_PointF = new PointF(3200f, 1100f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                     case R.id.floor3_serverRoom:
@@ -1225,37 +464,13 @@ public class Navigation extends AppCompatActivity {
                                         chooseroute = fromlocation * 100 + tolocation;
                                         anchor_from.setText("Server Room");
                                         from_PointF = new PointF(2250f, 1420f);
-                                        original_from_PointF=from_PointF;
-                                        original_to_PointF=to_PointF;
 
-                                        if(from_floor!=to_floor && fabControl==0)
-                                        {
-                                            from_PointF = original_from_PointF;
-
-                                            if (from_floor==1)
-                                                to_PointF=floor1_Stairs1;
-                                            else if(from_floor==2)
-                                                to_PointF=floor2_Stairs1;
-                                            else if(from_floor==3)
-                                                to_PointF=floor3_Stairs1;
-
-                                        }
-
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
-                                        imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
                                 }
+
+                                chooseroute=0;
+                                imageView.setPin(from_PointF, to_PointF, chooseroute);
                             }
                         })
                         .setPopupAnimation(new DroppyFadeInAnimation())
@@ -1263,11 +478,14 @@ public class Navigation extends AppCompatActivity {
                         .setYOffset(5)
                         .build();
                 droppyMenu.show();
+
+
             }
 
+
+
+
         }
-
-
 
     public void to_popup(View view) {
 
@@ -1277,12 +495,15 @@ public class Navigation extends AppCompatActivity {
         DroppyMenuPopup.Builder droppyBuilder = new DroppyMenuPopup.Builder(this,anchor_to);
 
 
+
             if (to_floor == 1) {
                 droppyMenu = droppyBuilder.fromMenu(R.menu.floor_1_locations)
                         .triggerOnAnchorClick(false)
                         .setOnClick(new DroppyClickCallbackInterface() {
                             @Override
                             public void call(View v, int which) {
+
+
 
                                 switch (which) {
 
@@ -1305,21 +526,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=-101;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_ecStaffRoom:
@@ -1342,21 +553,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=-102;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_ptcSeminarHall:
@@ -1379,21 +580,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=-103;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_placementTraining:
@@ -1416,21 +607,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=104;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1454,21 +635,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=105;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1492,21 +663,10 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=106;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1530,21 +690,10 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=107;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1562,6 +711,8 @@ public class Navigation extends AppCompatActivity {
                         .setOnClick(new DroppyClickCallbackInterface() {
                             @Override
                             public void call(View v, int which) {
+
+
 
                                 switch (which) {
 
@@ -1585,21 +736,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=201;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1623,21 +764,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=202;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1661,21 +792,10 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=203;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1698,21 +818,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=204;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1735,21 +845,10 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=205;
-
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1773,21 +872,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=206;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1811,21 +900,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=207;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1849,21 +928,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=208;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1887,21 +956,10 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=209;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1925,21 +983,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=210;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -1963,21 +1011,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=211;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2001,21 +1039,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=212;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                 }
@@ -2032,6 +1060,8 @@ public class Navigation extends AppCompatActivity {
                         .setOnClick(new DroppyClickCallbackInterface() {
                             @Override
                             public void call(View v, int which) {
+
+
 
                                 switch (which) {
 
@@ -2057,24 +1087,13 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-
-                                            chooseroute=301;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
 
                                      //   /*/
+
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2097,21 +1116,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=302;
+
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
-
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2135,21 +1144,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=303;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2172,21 +1171,12 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=304;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
+
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2209,21 +1199,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=305;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2246,21 +1226,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=306;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2283,21 +1253,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=307;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2320,21 +1280,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=308;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2357,21 +1307,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=309;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2394,21 +1334,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=310;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2431,21 +1361,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=311;
+                                            calculateInitialRoute();
 
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2468,21 +1388,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=312;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2505,21 +1415,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=313;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2544,21 +1444,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=314;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2582,21 +1472,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=315;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2619,21 +1499,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=316;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2656,21 +1526,11 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
-                                            chooseroute=317;
 
+                                            calculateInitialRoute();
                                         }
 
-                                        else if(from_floor!=to_floor && fabControl==1)
-                                        {
-                                            if(to_floor==1)
-                                                from_PointF=floor1_Stairs1;
-                                            else if(to_floor==2)
-                                                from_PointF=floor2_Stairs1;
-                                            else if(to_floor==3)
-                                                from_PointF=floor3_Stairs1;
 
-                                            to_PointF=original_to_PointF;
-                                        }
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
 
@@ -2684,10 +1544,6 @@ public class Navigation extends AppCompatActivity {
                 droppyMenu.show();
             }
         }
-
-
-
-
 
     public void from_floor_popup(View view) {
 
@@ -2791,8 +1647,7 @@ public class Navigation extends AppCompatActivity {
         droppyMenu.show();
     }
 
-    public void fabDisplay()
-    {
+    public void fabDisplay()  {
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
 
         if (Navigation.from_floor==Navigation.to_floor)
@@ -2895,8 +1750,7 @@ public class Navigation extends AppCompatActivity {
 
     }
 
-    public void redrawOnFabClick()
-    {
+    public void redrawOnFabClick() {
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
 
@@ -2912,147 +1766,14 @@ public class Navigation extends AppCompatActivity {
                 to_PointF=floor3_Stairs1;
 
 
-            switch (fromlocation)
-            {
-                case R.id.floor1_langLab:
-
-                    chooseroute=101;
-                    break;
-
-                case R.id.floor1_ecStaffRoom:
-                    chooseroute=102;
-                    break;
-                case R.id.floor1_ptcSeminarHall:
-                    chooseroute=103;
-                    break;
-                case R.id.floor1_placementTraining:
-                    chooseroute=104;
-                    break;
-                case R.id.floor1_placementStaffRoom:
-                    chooseroute=105;
-                    break;
-                case R.id.floor1_studentCouncil:
-                    chooseroute=106;
-                    break;
-                case R.id.floor1_gdRoom:
-                    chooseroute=107;
-                    break;
-
-                case R.id.floor2_vicePrincy:
-                    chooseroute=201;
-                break;
-
-                case R.id.floor2_scienceDept:
-                    chooseroute=202;
-                    break;
-
-                case R.id.floor2_csStaffRoom:
-                    chooseroute=203;
-                    break;
-                case R.id.floor2_ecStaffRoom1:
-                    chooseroute=204;
-                    break;
-                case R.id.floor2_ecStaffRoom2:
-                    chooseroute=205;
-                    break;
-                case R.id.floor2_s8eca:
-                    chooseroute=206;
-                    break;
-                case R.id.floor2_s8ecb:
-                    chooseroute=207;
-                    break;
-                case R.id.floor2_s6eca:
-                    chooseroute=208;
-                    break;
-                case R.id.floor2_s6ecb:
-                    chooseroute=209;
-                    break;
-                case R.id.floor2_s4csb:
-                    chooseroute=210;
-                    break;
-                case R.id.floor2_ktu:
-                    chooseroute=211;
-                    break;
-                case R.id.floor2_mg:
-                    chooseroute=212;
-                    break;
-
-                case R.id.floor3_csHOD:
-                    chooseroute=301;
-                break;
-
-                case R.id.floor3_meHOD:
-                    chooseroute=302;
-                    break;
-
-                case R.id.floor3_ccc:
-                    chooseroute=303;
-                    break;
-
-                case R.id.floor3_csLibrary:
-                    chooseroute=304;
-                    break;
-
-                case R.id.floor3_s8csa:
-                    chooseroute=305;
-                    break;
-
-                case R.id.floor3_s8csb:
-                    chooseroute=306;
-                    break;
-
-                case R.id.floor3_s6csa:
-                    chooseroute=307;
-                    break;
-
-                case R.id.floor3_s6csb:
-                    chooseroute=308;
-                    break;
-
-                case R.id.floor3_s4csa:
-                    chooseroute=309;
-                    break;
-
-                case R.id.floor3_s4mea:
-                    chooseroute=310;
-                    break;
-
-                case R.id.floor3_s4meb:
-                    chooseroute=311;
-                    break;
-
-                case R.id.floor3_seminarHall1:
-                    chooseroute=312;
-                    break;
-
-                case R.id.floor3_seminarHall2:
-                    chooseroute=313;
-                    break;
-
-                case R.id.floor3_csStaffRoom1:
-                    chooseroute=314;
-                    break;
-
-                case R.id.floor3_csStaffRoom2:
-                    chooseroute=315;
-                    break;
-
-                case R.id.floor3_meStaffRoom:
-                    chooseroute=316;
-                    break;
-
-                case R.id.floor3_serverRoom:
-                    chooseroute=317;
-                    break;
+            calculateInitialRoute();
+            imageView.setPin(from_PointF, to_PointF, chooseroute);
 
 
-
-
-            }
 
         }
 
-        else if(from_floor!=to_floor && fabControl==1) {
+        else if(from_floor!=to_floor && fabControl==1) { // CALLED FIRST
             if (to_floor == 1)
                 from_PointF = floor1_Stairs1;
             else if (to_floor == 2)
@@ -3062,142 +1783,294 @@ public class Navigation extends AppCompatActivity {
 
             to_PointF = original_to_PointF;
 
-            switch (tolocation) {
-                case R.id.floor1_langLab:
-                    chooseroute = -101;
-                    break;
 
-                case R.id.floor1_ecStaffRoom:
-                    chooseroute = -102;
-                    break;
-                case R.id.floor1_ptcSeminarHall:
-                    chooseroute = -103;
-                    break;
-                case R.id.floor1_placementTraining:
-                    chooseroute = -104;
-                    break;
-                case R.id.floor1_placementStaffRoom:
-                    chooseroute = -105;
-                    break;
-                case R.id.floor1_studentCouncil:
-                    chooseroute = -106;
-                    break;
-                case R.id.floor1_gdRoom:
-                    chooseroute = -107;
-                    break;
+            calculateFinalRoute();
 
-                case R.id.floor2_vicePrincy:
-                    chooseroute = -201;
-                    break;
-
-                case R.id.floor2_scienceDept:
-                    chooseroute = -202;
-                    break;
-
-                case R.id.floor2_csStaffRoom:
-                    chooseroute = -203;
-                    break;
-                case R.id.floor2_ecStaffRoom1:
-                    chooseroute = -204;
-                    break;
-                case R.id.floor2_ecStaffRoom2:
-                    chooseroute = -205;
-                    break;
-                case R.id.floor2_s8eca:
-                    chooseroute = -206;
-                    break;
-                case R.id.floor2_s8ecb:
-                    chooseroute = -207;
-                    break;
-                case R.id.floor2_s6eca:
-                    chooseroute = -208;
-                    break;
-                case R.id.floor2_s6ecb:
-                    chooseroute = -209;
-                    break;
-                case R.id.floor2_s4csb:
-                    chooseroute = -210;
-                    break;
-                case R.id.floor2_ktu:
-                    chooseroute = -211;
-                    break;
-                case R.id.floor2_mg:
-                    chooseroute = -212;
-                    break;
-
-                case R.id.floor3_csHOD:
-                    chooseroute = -301;
-                    break;
-
-                case R.id.floor3_meHOD:
-                    chooseroute = -302;
-                    break;
-
-                case R.id.floor3_ccc:
-                    chooseroute = -303;
-                    break;
-
-                case R.id.floor3_csLibrary:
-                    chooseroute = -304;
-                    break;
-
-                case R.id.floor3_s8csa:
-                    chooseroute = -305;
-                    break;
-
-                case R.id.floor3_s8csb:
-                    chooseroute = -306;
-                    break;
-
-                case R.id.floor3_s6csa:
-                    chooseroute = -307;
-                    break;
-
-                case R.id.floor3_s6csb:
-                    chooseroute = -308;
-                    break;
-
-                case R.id.floor3_s4csa:
-                    chooseroute = -309;
-                    break;
-
-                case R.id.floor3_s4mea:
-                    chooseroute = -310;
-                    break;
-
-                case R.id.floor3_s4meb:
-                    chooseroute = -311;
-                    break;
-
-                case R.id.floor3_seminarHall1:
-                    chooseroute = -312;
-                    break;
-
-                case R.id.floor3_seminarHall2:
-                    chooseroute = -313;
-                    break;
-
-                case R.id.floor3_csStaffRoom1:
-                    chooseroute = -314;
-                    break;
-
-                case R.id.floor3_csStaffRoom2:
-                    chooseroute = -315;
-                    break;
-
-                case R.id.floor3_meStaffRoom:
-                    chooseroute = -316;
-                    break;
-
-                case R.id.floor3_serverRoom:
-                    chooseroute = -317;
-                    break;
-
-            }
-
-        }
             imageView.setPin(from_PointF, to_PointF, chooseroute);
 
 
+
+
+        }
+
+
+
+    }
+
+    void calculateInitialRoute() {
+        switch (fromlocation)
+        {
+            case R.id.floor1_langLab:
+
+                chooseroute=101;
+                break;
+
+            case R.id.floor1_ecStaffRoom:
+                chooseroute=102;
+                break;
+            case R.id.floor1_ptcSeminarHall:
+                chooseroute=103;
+                break;
+            case R.id.floor1_placementTraining:
+                chooseroute=104;
+                break;
+            case R.id.floor1_placementStaffRoom:
+                chooseroute=105;
+                break;
+            case R.id.floor1_studentCouncil:
+                chooseroute=106;
+                break;
+            case R.id.floor1_gdRoom:
+                chooseroute=107;
+                break;
+
+            case R.id.floor2_vicePrincy:
+                chooseroute=201;
+                break;
+
+            case R.id.floor2_scienceDept:
+                chooseroute=202;
+                break;
+
+            case R.id.floor2_csStaffRoom:
+                chooseroute=203;
+                break;
+            case R.id.floor2_ecStaffRoom1:
+                chooseroute=204;
+                break;
+            case R.id.floor2_ecStaffRoom2:
+                chooseroute=205;
+                break;
+            case R.id.floor2_s8eca:
+                chooseroute=206;
+                break;
+            case R.id.floor2_s8ecb:
+                chooseroute=207;
+                break;
+            case R.id.floor2_s6eca:
+                chooseroute=208;
+                break;
+            case R.id.floor2_s6ecb:
+                chooseroute=209;
+                break;
+            case R.id.floor2_s4csb:
+                chooseroute=210;
+                break;
+            case R.id.floor2_ktu:
+                chooseroute=211;
+                break;
+            case R.id.floor2_mg:
+                chooseroute=212;
+                break;
+
+            case R.id.floor3_csHOD:
+                chooseroute=301;
+                break;
+
+            case R.id.floor3_meHOD:
+                chooseroute=302;
+                break;
+
+            case R.id.floor3_ccc:
+                chooseroute=303;
+                break;
+
+            case R.id.floor3_csLibrary:
+                chooseroute=304;
+                break;
+
+            case R.id.floor3_s8csa:
+                chooseroute=305;
+                break;
+
+            case R.id.floor3_s8csb:
+                chooseroute=306;
+                break;
+
+            case R.id.floor3_s6csa:
+                chooseroute=307;
+                break;
+
+            case R.id.floor3_s6csb:
+                chooseroute=308;
+                break;
+
+            case R.id.floor3_s4csa:
+                chooseroute=309;
+                break;
+
+            case R.id.floor3_s4mea:
+                chooseroute=310;
+                break;
+
+            case R.id.floor3_s4meb:
+                chooseroute=311;
+                break;
+
+            case R.id.floor3_seminarHall1:
+                chooseroute=312;
+                break;
+
+            case R.id.floor3_seminarHall2:
+                chooseroute=313;
+                break;
+
+            case R.id.floor3_csStaffRoom1:
+                chooseroute=314;
+                break;
+
+            case R.id.floor3_csStaffRoom2:
+                chooseroute=315;
+                break;
+
+            case R.id.floor3_meStaffRoom:
+                chooseroute=316;
+                break;
+
+            case R.id.floor3_serverRoom:
+                chooseroute=317;
+                break;
+
+
+
+
+        }
+
+
+    }
+
+    void calculateFinalRoute() {
+        switch (tolocation) {
+            case R.id.floor1_langLab:
+                chooseroute = -101;
+                break;
+
+            case R.id.floor1_ecStaffRoom:
+                chooseroute = -102;
+                break;
+            case R.id.floor1_ptcSeminarHall:
+                chooseroute = -103;
+                break;
+            case R.id.floor1_placementTraining:
+                chooseroute = -104;
+                break;
+            case R.id.floor1_placementStaffRoom:
+                chooseroute = -105;
+                break;
+            case R.id.floor1_studentCouncil:
+                chooseroute = -106;
+                break;
+            case R.id.floor1_gdRoom:
+                chooseroute = -107;
+                break;
+
+            case R.id.floor2_vicePrincy:
+                chooseroute = -201;
+                break;
+
+            case R.id.floor2_scienceDept:
+                chooseroute = -202;
+                break;
+
+            case R.id.floor2_csStaffRoom:
+                chooseroute = -203;
+                break;
+            case R.id.floor2_ecStaffRoom1:
+                chooseroute = -204;
+                break;
+            case R.id.floor2_ecStaffRoom2:
+                chooseroute = -205;
+                break;
+            case R.id.floor2_s8eca:
+                chooseroute = -206;
+                break;
+            case R.id.floor2_s8ecb:
+                chooseroute = -207;
+                break;
+            case R.id.floor2_s6eca:
+                chooseroute = -208;
+                break;
+            case R.id.floor2_s6ecb:
+                chooseroute = -209;
+                break;
+            case R.id.floor2_s4csb:
+                chooseroute = -210;
+                break;
+            case R.id.floor2_ktu:
+                chooseroute = -211;
+                break;
+            case R.id.floor2_mg:
+                chooseroute = -212;
+                break;
+
+            case R.id.floor3_csHOD:
+                chooseroute = -301;
+                break;
+
+            case R.id.floor3_meHOD:
+                chooseroute = -302;
+                break;
+
+            case R.id.floor3_ccc:
+                chooseroute = -303;
+                break;
+
+            case R.id.floor3_csLibrary:
+                chooseroute = -304;
+                break;
+
+            case R.id.floor3_s8csa:
+                chooseroute = -305;
+                break;
+
+            case R.id.floor3_s8csb:
+                chooseroute = -306;
+                break;
+
+            case R.id.floor3_s6csa:
+                chooseroute = -307;
+                break;
+
+            case R.id.floor3_s6csb:
+                chooseroute = -308;
+                break;
+
+            case R.id.floor3_s4csa:
+                chooseroute = -309;
+                break;
+
+            case R.id.floor3_s4mea:
+                chooseroute = -310;
+                break;
+
+            case R.id.floor3_s4meb:
+                chooseroute = -311;
+                break;
+
+            case R.id.floor3_seminarHall1:
+                chooseroute = -312;
+                break;
+
+            case R.id.floor3_seminarHall2:
+                chooseroute = -313;
+                break;
+
+            case R.id.floor3_csStaffRoom1:
+                chooseroute = -314;
+                break;
+
+            case R.id.floor3_csStaffRoom2:
+                chooseroute = -315;
+                break;
+
+            case R.id.floor3_meStaffRoom:
+                chooseroute = -316;
+                break;
+
+            case R.id.floor3_serverRoom:
+                chooseroute = -317;
+                break;
+
+        }
     }
 }

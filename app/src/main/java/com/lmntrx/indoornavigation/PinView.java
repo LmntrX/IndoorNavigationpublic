@@ -100,10 +100,10 @@ public class PinView extends SubsamplingScaleImageView {
             {
 
                 // ---------------------------------DEFAULT VALUES----------------------------------------------------
-                case -1: break;
+
                 case 0: break;
 
-                // ----------------STAIRCASE VALUES. When From floor < To Floor. Destination =Staircases----------------
+                // ----------------STAIRCASE VALUES.. Destination =Staircases----------------
 
                 case 101:
 
@@ -260,9 +260,11 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
-                // -------------STAIRCASE VALUES. When From floor > To Floor. Starting Point =Staircases-----------------
+                // -------------STAIRCASE VALUES. Starting Point =Staircases-----------------
 
                 case -101:
+
+                    canvas.drawLine(vX2+20, vY2+180, vX2+140, vY2+180, paint);
 
                     break;
 
