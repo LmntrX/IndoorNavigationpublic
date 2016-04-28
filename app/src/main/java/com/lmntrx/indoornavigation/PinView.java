@@ -28,32 +28,33 @@ public class PinView extends SubsamplingScaleImageView {
 
     public PinView(Context context) {
         this(context, null);
+        // SETS COLOR OF LINE DRAWN TO BLACK
         paint.setColor(Color.BLACK);
     }
 
     public PinView(Context context, AttributeSet attr) {
         super(context, attr);
+        // SETS COLOR OF LINE DRAWN TO BLACK
         paint.setColor(Color.BLACK);
         initialise();
     }
 
+    // sets Pin according to locations already set in navigation
     public void setPin(PointF sPin,PointF sPin2,int chooseRoute) {
         this.sPin = sPin;
         this.sPin2 = sPin2;
         this.chooseRouteInMap=chooseRoute;
         initialise();
-        invalidate();
+        invalidate(); // calls ondraw()
 
 
     }
 
-    public PointF getPin() {
-        return sPin;
-    }
 
 
 
 
+        // convert x,y coordinates to ondraw coordinates
     private void initialise() {
         float density = getResources().getDisplayMetrics().densityDpi;
         pin = BitmapFactory.decodeResource(this.getResources(), R.drawable.pin);
@@ -71,6 +72,7 @@ public class PinView extends SubsamplingScaleImageView {
 
     }
 
+    // onDraw function is called when invalidate() is called.
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -83,19 +85,26 @@ public class PinView extends SubsamplingScaleImageView {
         Paint paint = new Paint();
         paint.setAntiAlias(true);
 
+        // calculates vX and vY based on sPin and sPin2. sPin = fromPoint_F  and sPin2 = to_PointF ( corresponding)
         if (sPin != null && pin != null) {
+            // SETS 1st PIN in map
             PointF vPin = sourceToViewCoord(sPin);
             PointF vPin2 = sourceToViewCoord(sPin2);
             float vX = vPin.x - (pin.getWidth()/2);
             float vY = vPin.y - pin.getHeight();
+            //drawBitmap is the function to actually place the pin on map. locations vX and vY are calculated based on from_PointF and toPointF set in navigation
             canvas.drawBitmap(pin, vX, vY, paint);
 
+            // SETS 2nd Pin in map
             float vX2 = vPin2.x - (pin2.getWidth()/2);
             float vY2 = vPin2.y - pin2.getHeight();
             canvas.drawBitmap(pin2, vX2, vY2, paint);
+
+            // SETS WIDTH OF LINE
             paint.setStrokeWidth(50);
 
 
+            // This entire switch case draws all the routes as per user choices in navigation
             switch(chooseRouteInMap)
             {
 
@@ -5764,33 +5773,7 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
-                /// -----------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                /// ------------------------------------------------------------------------------------------------------
 
 
             }

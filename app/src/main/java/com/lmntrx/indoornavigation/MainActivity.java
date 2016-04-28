@@ -38,11 +38,15 @@ public class MainActivity extends Activity {
         final Button b1= (Button) findViewById(R.id.NavigationBTN);
         final Button b2= (Button) findViewById(R.id.GalleryBTN);
         final Button b3= (Button) findViewById(R.id.AboutBTN);
+
         final Button b4= (Button) findViewById(R.id.ExitBTN);
+        final Button b5= (Button) findViewById(R.id.EmergencyBTN);
 
-        indoorTXT.setTranslationY(250);
-        vjcTXT.setTranslationY(250);
+        indoorTXT.setTranslationY(300);
+        vjcTXT.setTranslationY(300);
 
+
+        // Animation code
         final Animation fadeIn = new AlphaAnimation(0, 1);
         fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
         fadeIn.setDuration(2000);
@@ -50,7 +54,7 @@ public class MainActivity extends Activity {
 
 
 
-
+        // animation code handler
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -79,10 +83,12 @@ public class MainActivity extends Activity {
                 b2.setVisibility(View.VISIBLE);
                 b3.setVisibility(View.VISIBLE);
                 b4.setVisibility(View.VISIBLE);
+                b5.setVisibility(View.VISIBLE);
                 b1.setAnimation(fadeIn);
                 b2.setAnimation(fadeIn);
                 b3.setAnimation(fadeIn);
                 b4.setAnimation(fadeIn);
+                b5.setAnimation(fadeIn);
 
 
             }
@@ -116,4 +122,9 @@ public class MainActivity extends Activity {
     }
 
 
+    public void enterEmergency(View view) {
+
+        Intent intent = new Intent(this, EmergencyExits.class);
+        startActivity(intent);
+    }
 }

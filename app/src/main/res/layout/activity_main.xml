@@ -62,6 +62,17 @@
         android:textColor="#fff"
         android:background="@color/colorAccent"
         android:visibility="invisible"
+        android:text="Emergency Exits"
+        android:id="@+id/EmergencyBTN"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="enterEmergency"/>
+
+    <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:visibility="invisible"
         android:text="About"
         android:id="@+id/AboutBTN"
         android:layout_width="175dp"

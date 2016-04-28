@@ -16,6 +16,7 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 public class GalleryFragment extends Fragment {
 
 
+    // ALL MAPS IN GALLERY ARE DRAWN ON FRAGMENTS. EACH TAB IS A FRAGMENT
     public GalleryFragment() {
         // Required empty public constructor
     }

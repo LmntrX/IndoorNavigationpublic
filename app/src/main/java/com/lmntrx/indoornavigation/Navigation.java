@@ -45,28 +45,35 @@ public class Navigation extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // X,Y Coordinates of stairs
         floor1_Stairs1 = new PointF(1460f, 1600f);
         floor2_Stairs1 = new PointF(1460f, 1600f);
         floor3_Stairs1 = new PointF(1600f, 1900f);
 
+
+        // Start from these data
         from_floor = 1;
         to_floor = 1;
 
+        // function to show/hide fab
         fabDisplay();
 
+        // background map setting
         final PinView imageView = (PinView) findViewById(R.id.navigationScaleIMGVIEW);
         imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_CROP);
         imageView.setZoomEnabled(false);
         imageView.setImage(ImageSource.resource(R.drawable.map1));
 
+        // choose 2 default x,y coordinates and display 2 pins at 2 default locations. Initialising Pins
         chooseroute = 0;
+        //setPin assigns pins to corresponding locations
         imageView.setPin(from_PointF, to_PointF, chooseroute);
 
 
     }
 
 
-
+// This function is called whenever From button is clicked
     public void from_popup(View view) {
         thisview=view;
 
@@ -84,7 +91,7 @@ public class Navigation extends AppCompatActivity {
         DroppyMenuPopup.Builder droppyBuilder = new DroppyMenuPopup.Builder(this, anchor_from);
 
 
-
+// whenever an item in from popup menu is clicked set From_PointF to that location.
             if (from_floor == 1) {
                 droppyMenu = droppyBuilder.fromMenu(R.menu.floor_1_locations)
                         .triggerOnAnchorClick(false)
@@ -103,7 +110,7 @@ public class Navigation extends AppCompatActivity {
                                         anchor_from.setText("Language Lab");
 
 
-
+                                        //these are coordinates of language lab . similarly do for all nodes.
                                         from_PointF = new PointF(280f, 1021f);
 
 
@@ -177,6 +184,7 @@ public class Navigation extends AppCompatActivity {
 
                                 }
 
+                                // draw pins at chosen location.
                                 chooseroute=0;
                                 imageView.setPin(from_PointF, to_PointF, chooseroute);
                             }
@@ -320,7 +328,9 @@ public class Navigation extends AppCompatActivity {
                         .build();
                 droppyMenu.show();
 
-            } else if (from_floor == 3) {
+            }
+            // 3 separate ifs because 3 floors
+            else if (from_floor == 3) {
                 droppyMenu = droppyBuilder.fromMenu(R.menu.floor_3_locations)
                         .triggerOnAnchorClick(false)
                         .setOnClick(new DroppyClickCallbackInterface() {
@@ -496,6 +506,7 @@ public class Navigation extends AppCompatActivity {
 
         }
 
+    // This function is called whenever To button is clicked
     public void to_popup(View view) {
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
@@ -504,6 +515,7 @@ public class Navigation extends AppCompatActivity {
         DroppyMenuPopup.Builder droppyBuilder = new DroppyMenuPopup.Builder(this,anchor_to);
 
 
+        // similar to from button. but here assign  to_PointF  = whichever option clicked
 
             if (to_floor == 1) {
                 droppyMenu = droppyBuilder.fromMenu(R.menu.floor_1_locations)
@@ -535,11 +547,13 @@ public class Navigation extends AppCompatActivity {
                                             else if(from_floor==3)
                                                 to_PointF=floor3_Stairs1;
 
+                                            // a correct path is drawn only when to button is clicked.
+                                            // function to choose the correct route to show path
                                             calculateInitialRoute();
 
                                         }
 
-
+                                        // sets pins and also draws the path
                                         imageView.setPin(from_PointF, to_PointF, chooseroute);
                                         break;
                                     case R.id.floor1_ecStaffRoom:
@@ -1554,6 +1568,8 @@ public class Navigation extends AppCompatActivity {
             }
         }
 
+
+    // this function is called whenever from floor button is clicked
     public void from_floor_popup(View view) {
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
@@ -1614,6 +1630,7 @@ public class Navigation extends AppCompatActivity {
         droppyMenu.show();
     }
 
+    // this function is called whenever to floor button is clicked
     public void to_floor_popup(View view) {
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
@@ -1656,6 +1673,7 @@ public class Navigation extends AppCompatActivity {
         droppyMenu.show();
     }
 
+    // function to determine fab hide/show
     public void fabDisplay()  {
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -1672,6 +1690,7 @@ public class Navigation extends AppCompatActivity {
 
     }
 
+    // this function is executed whenever user presses fab button
     public void chooseNextFloor(View view) {
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
         imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_CROP);
@@ -1759,6 +1778,7 @@ public class Navigation extends AppCompatActivity {
 
     }
 
+    // 2nd part of chooseNextFloor. also executed whenever user presses fab button
     public void redrawOnFabClick() {
 
         final PinView imageView = (PinView)findViewById(R.id.navigationScaleIMGVIEW);
@@ -1806,6 +1826,7 @@ public class Navigation extends AppCompatActivity {
 
     }
 
+    // function to calculate chooseRoute
     void calculateInitialRoute() {
         switch (fromlocation)
         {
@@ -1948,6 +1969,7 @@ public class Navigation extends AppCompatActivity {
 
     }
 
+    // function to calculate route when fab button is clicked
     void calculateFinalRoute() {
         switch (tolocation) {
             case R.id.floor1_langLab:
