@@ -34,7 +34,7 @@ public class Navigation extends AppCompatActivity {
 
     public static int fabControl=0;
 
-    final TextView textView = (TextView) findViewById(R.id.textView);
+
 
 
 
@@ -49,15 +49,15 @@ public class Navigation extends AppCompatActivity {
         floor2_Stairs1 = new PointF(1460f, 1600f);
         floor3_Stairs1 = new PointF(1600f, 1900f);
 
-        from_floor = 1;
-        to_floor = 2;
+        from_floor = 3;
+        to_floor = 3;
 
         fabDisplay();
 
         final PinView imageView = (PinView) findViewById(R.id.navigationScaleIMGVIEW);
         imageView.setMinimumScaleType(SubsamplingScaleImageView.SCALE_TYPE_CENTER_CROP);
         imageView.setZoomEnabled(false);
-        imageView.setImage(ImageSource.resource(R.drawable.map1));
+        imageView.setImage(ImageSource.resource(R.drawable.map3));
 
         chooseroute = 0;
         imageView.setPin(from_PointF, to_PointF, chooseroute);
