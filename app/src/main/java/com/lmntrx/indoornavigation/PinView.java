@@ -103,12 +103,17 @@ public class PinView extends SubsamplingScaleImageView {
 
                 case 0: break;
 
-                // ----------------STAIRCASE VALUES.. Destination =Staircases----------------
+                // ----------------STAIRCASE VALUES. POSITIVE VALUES ARE . Destination =Staircases----------------
+
+                // -------------STAIRCASE VALUES.NEGATIVE VALUES ARE. Starting Point =Staircases-----------------
 
                 case 101:
 
-                    canvas.drawLine(vX-550, vY+220, vX+370, vY+220, paint);
-                    canvas.drawLine(vX+345, vY+220, vX+345, vY-320, paint);
+                  
+
+                    break;
+
+                case -101:
 
                     break;
 
@@ -120,155 +125,11 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
-                case 103:
-
-                    break;
-
-                case 104:
-
-                    break;
-
-                case 105:
-
-                    break;
-
-                case 106:
-
-                    break;
-
-                case 107:
-
-                    break;
-
-                case 108:
-
-                    break;
-
-                case 201:
-
-                    break;
-
-                case 202:
-
-                    break;
-
-                case 203:
-
-                    break;
-
-                case 204:
-
-                    break;
-
-                case 205:
-
-                    break;
-
-                case 206:
-
-                    break;
-
-                case 207:
-
-                    break;
-
-                case 208:
-
-                    break;
-
-                case 209:
-
-                    break;
-
-                case 210:
-
-                    break;
-
-                case 211:
-
-                    break;
-
-                case 212:
-
-                    break;
-
-                case 301:
-
-                    break;
-
-                case 302:
-
-                    break;
-
-                case 303:
-
-                    break;
-
-                case 304:
-
-                    break;
-
-                case 305:
-
-                    break;
-
-                case 306:
-
-                    break;
-
-                case 307:
-
-                    break;
-
-                case 308:
-
-                    break;
-
-                case 309:
-
-                    break;
-
-                case 310:
-
-                    break;
-
-                case 311:
-
-                    break;
-
-                case 312:
-
-                    break;
-
-                case 313:
-
-                    break;
-
-                case 314:
-
-                    break;
-
-                case 315:
-
-                    break;
-
-                case 316:
-
-                    break;
-
-                case 317:
-
-                    break;
-
-                // -------------STAIRCASE VALUES. Starting Point =Staircases-----------------
-
-                case -101:
-
-                    canvas.drawLine(vX2+20, vY2+180, vX2+140, vY2+180, paint);
-
-                    break;
-
                 case -102:
+
+                    break;
+
+                case 103:
 
                     break;
 
@@ -276,7 +137,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 104:
+
+                    break;
+
                 case -104:
+
+                    break;
+
+                case 105:
 
                     break;
 
@@ -284,7 +153,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 106:
+
+                    break;
+
                 case -106:
+
+                    break;
+
+                case 107:
 
                     break;
 
@@ -292,7 +169,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 108:
+
+                    break;
+
                 case -108:
+
+                    break;
+
+                case 201:
 
                     break;
 
@@ -300,7 +185,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 202:
+
+                    break;
+
                 case -202:
+
+                    break;
+
+                case 203:
 
                     break;
 
@@ -308,7 +201,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 204:
+
+                    break;
+
                 case -204:
+
+                    break;
+
+                case 205:
 
                     break;
 
@@ -316,7 +217,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 206:
+
+                    break;
+
                 case -206:
+
+                    break;
+
+                case 207:
 
                     break;
 
@@ -324,7 +233,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 208:
+
+                    break;
+
                 case -208:
+
+                    break;
+
+                case 209:
 
                     break;
 
@@ -332,7 +249,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 210:
+
+                    break;
+
                 case -210:
+
+                    break;
+
+                case 211:
 
                     break;
 
@@ -340,7 +265,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 212:
+
+                    break;
+
                 case -212:
+
+                    break;
+
+                case 301:
 
                     break;
 
@@ -348,7 +281,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 302:
+
+                    break;
+
                 case -302:
+
+                    break;
+
+                case 303:
 
                     break;
 
@@ -356,7 +297,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 304:
+
+                    break;
+
                 case -304:
+
+                    break;
+
+                case 305:
 
                     break;
 
@@ -364,7 +313,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 306:
+
+                    break;
+
                 case -306:
+
+                    break;
+
+                case 307:
 
                     break;
 
@@ -372,7 +329,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 308:
+
+                    break;
+
                 case -308:
+
+                    break;
+
+                case 309:
 
                     break;
 
@@ -380,7 +345,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 310:
+
+                    break;
+
                 case -310:
+
+                    break;
+
+                case 311:
 
                     break;
 
@@ -388,7 +361,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 312:
+
+                    break;
+
                 case -312:
+
+                    break;
+
+                case 313:
 
                     break;
 
@@ -396,7 +377,15 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 314:
+
+                    break;
+
                 case -314:
+
+                    break;
+
+                case 315:
 
                     break;
 
@@ -404,13 +393,23 @@ public class PinView extends SubsamplingScaleImageView {
 
                     break;
 
+                case 316:
+
+                    break;
+
                 case -316:
+
+                    break;
+
+                case 317:
 
                     break;
 
                 case -317:
 
                     break;
+
+
 
 
 
@@ -801,11 +800,33 @@ public class PinView extends SubsamplingScaleImageView {
 
                // 4.       Vice Principal - S8 ECA
 
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
+
 
 
 
 
                // 5.       Vice Principal - S8 ECB
+
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
@@ -813,11 +834,32 @@ public class PinView extends SubsamplingScaleImageView {
 
                // 6.       Vice Principal - S6 ECA
 
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
 
                // 7.       Vice Principal - S6 ECB
+
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
@@ -825,44 +867,124 @@ public class PinView extends SubsamplingScaleImageView {
 
                // 8.       Vice Principal - S4 CSB
 
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
 
                // 9.       Vice Principal - KTU Exam Control Room
 
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
                // 10.   Vice Principal - MG Exam Control Room
 
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
 
 
 
                // 11.   S&H dept. -  CS Staff Room
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
+
+
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
 
                // 12.   S&H dept. -  EC staff Room
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_ecStaffRoom1:
 
+
+                    break;
+
+
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
                // 13.   S&H dept. -  S8 ECA
+
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
 
                // 14.   S&H dept. -  S8 ECB
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
 
                // 15.   S&H dept. -  S6 ECA
+
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
@@ -870,11 +992,33 @@ public class PinView extends SubsamplingScaleImageView {
 
                // 16.   S&H dept. -  S6 ECB
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_scienceDept:
+
+
+                    break;
+
 
 
 
 
                // 17.   S&H dept. -  S4 CSB
+
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
@@ -882,12 +1026,31 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //18.   S&H dept. -  KTU Exam Control Room
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
                // 19.   S&H dept. -  MG Exam Control Room
 
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_scienceDept:
+
+
+                    break;
 
 
 
@@ -895,17 +1058,47 @@ public class PinView extends SubsamplingScaleImageView {
                // 20.   CS Staff Room - EC staff Room
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
+
+
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
                // 21.   CS Staff Room - S8 ECA
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
                // 22.   CS Staff Room - S8 ECB
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
@@ -913,6 +1106,16 @@ public class PinView extends SubsamplingScaleImageView {
                 //23.   CS Staff Room - S6 ECA
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
@@ -920,6 +1123,16 @@ public class PinView extends SubsamplingScaleImageView {
                 //24.   CS Staff Room - S6 ECB
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
@@ -927,6 +1140,16 @@ public class PinView extends SubsamplingScaleImageView {
                 //25.   CS Staff Room - S4 CSB
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
@@ -934,17 +1157,48 @@ public class PinView extends SubsamplingScaleImageView {
                 //26.   CS Staff Room - KTU Exam Control Room
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_ktu:
+
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
                 //27.   CS Staff Room - MG Exam Control Room
 
 
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
 
 
 
                 //28.   EC staff Room 1 - S8 ECA
 
+
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
@@ -952,16 +1206,46 @@ public class PinView extends SubsamplingScaleImageView {
                 //29.   EC staff Room 1 - S8 ECB
 
 
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
                 //30.   EC staff Room 1 - S6 ECA
 
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_s6eca:
 
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
                 //31.   EC staff Room 1- S6 ECB
+
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
@@ -969,41 +1253,110 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //32.   EC staff Room 1- S4 CSB
 
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_s4csb:
 
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
                 //33.   EC staff Room 1- KTU Exam Control Room
 
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
 
                 //34.   EC staff Room 1- MG Exam Control Room
 
 
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_mg:
 
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_ecStaffRoom1:
+
+
+                    break;
 
 
                 //35.   S8 ECA - S8 ECB
 
+                case (R.id.floor2_s8eca*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_s8eca:
+
+
+                    break;
 
 
 
 
                 //36.   S8 ECA - S6 ECA
 
+                case (R.id.floor2_s8eca*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_s8eca:
+
+
+                    break;
 
 
 
 
                 //37.   S8 ECA - S6 ECB
 
+                case (R.id.floor2_s8eca*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_s8eca:
+
+
+                    break;
 
 
 
 
                 //38.   S8 ECA - S4 CSB
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
 
 
 
@@ -1012,21 +1365,62 @@ public class PinView extends SubsamplingScaleImageView {
                 //39.   S8 ECA - KTU Exam Control Room
 
 
+                case (R.id.floor2_s8eca*100)+R.id.floor2_ktu:
+
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_s8eca:
+
+
+                    break;
 
 
 
                 //40.   S8 ECA - MG Exam Control Room
 
+                case (R.id.floor2_s8eca*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_s8eca:
+
+
+                    break;
 
 
 
                 //41.   S8 ECB - S6 ECA
 
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_s8ecb:
+
+
+                    break;
 
 
 
 
                 //42.   S8 ECB - S6 ECB
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_s8ecb:
+
+
+                    break;
+
 
 
 
@@ -1034,12 +1428,32 @@ public class PinView extends SubsamplingScaleImageView {
 
                 //43.   S8 ECB - S4 CSB
 
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_s8ecb:
+
+
+                    break;
 
 
 
 
                 //44.   S8 ECB - KTU Exam Control Room
 
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_ktu:
+
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_s8ecb:
+
+
+                    break;
 
 
 
@@ -1047,96 +1461,282 @@ public class PinView extends SubsamplingScaleImageView {
                 //45.   S8 ECB - MG Exam Control Room
 
 
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_s8ecb:
+
+
+                    break;
 
 
 
                 //46.   S6 ECA - S6 ECB
 
 
+                case (R.id.floor2_s6eca*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_s6eca:
+
+
+                    break;
 
 
 
                 //47.   S6 ECA - S4 CSB
 
 
+                case (R.id.floor2_s6eca*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
 
 
 
                 //48.   S6 ECA - KTU Exam Control Room
 
+                case (R.id.floor2_s6eca*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_s6eca:
+
+
+                    break;
 
 
                 //49.   S6 ECA - MG Exam Control Room
 
+                case (R.id.floor2_s6eca*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_s6eca:
+
+
+                    break;
 
 
 
                // 50.   S6 ECB - S4 CSB
 
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_s4csb:
 
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_s6ecb:
+
+
+                    break;
 
 
                // 51.   S6 ECB - KTU Exam Control Room
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_s6ecb:
+
+
+                    break;
 
 
 
                 //52.   S6 ECB - MG Exam Control Room
 
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_mg:
 
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_s6ecb:
+
+
+                    break;
 
 
                 //53.   S4 CSB - KTU Exam Control Room
+                case (R.id.floor2_s4csb*100)+R.id.floor2_ktu:
 
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_s4csb:
+
+
+                    break;
 
 
 
                 //54.   S4 CSB - MG Exam Control Room
 
+                case (R.id.floor2_s4csb*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_s4csb:
+
+
+                    break;
 
 
 
                 //55.   KTU Exam Control Room -  MG Exam Control Room
 
+                case (R.id.floor2_ktu*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_ktu:
+
+
+                    break;
 
 
                 //68.  EC Staff Room 2 - Vice Principal
+
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_vicePrincy:
+
+
+                    break;
+
+
+                case (R.id.floor2_vicePrincy*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
                 //69. EC Staff Room 2 - Science and Humanities Dept
 
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_scienceDept:
+
+
+                    break;
+
+
+                case (R.id.floor2_scienceDept*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
                 //70. EC Staff Room 2 - CS Staff Room
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_csStaffRoom:
+
+
+                    break;
+
+
+                case (R.id.floor2_csStaffRoom*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
                 //71. EC Staff Room 2 - Ec staff Room 1
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_ecStaffRoom1:
 
+
+                    break;
+
+
+                case (R.id.floor2_ecStaffRoom1*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
                 //72. EC Staff Room 2 - S8 ECA
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_s8eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s8eca*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
                 //73. EC Staff Room 2 - S8 ECB
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_s8ecb:
 
+
+                    break;
+
+
+                case (R.id.floor2_s8ecb*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
                 //74. EC Staff Room 2 - S6 ECA
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_s6eca:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6eca*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
                 //75. EC Staff Room 2 - S6 ECB
 
+
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_s6ecb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s6ecb*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
@@ -1144,14 +1744,45 @@ public class PinView extends SubsamplingScaleImageView {
 
 
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_s4csb:
+
+
+                    break;
+
+
+                case (R.id.floor2_s4csb*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
                 //77. EC Staff Room 2 - KTU
 
 
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_ktu:
+
+
+                    break;
+
+
+                case (R.id.floor2_ktu*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
                 //78. EC Staff Room 2 - MG
 
+
+                case (R.id.floor2_ecStaffRoom2*100)+R.id.floor2_mg:
+
+
+                    break;
+
+
+                case (R.id.floor2_mg*100)+R.id.floor2_ecStaffRoom2:
+
+
+                    break;
 
 
 
