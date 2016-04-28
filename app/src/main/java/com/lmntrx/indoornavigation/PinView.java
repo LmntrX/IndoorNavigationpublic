@@ -159,6 +159,8 @@ public class PinView extends SubsamplingScaleImageView {
 
                 case -105:
 
+                canvas.drawLine(vX2+50, vY2+20, vX2-100, vY2+20, paint);
+
                     break;
 
                 case 106:
@@ -168,6 +170,7 @@ public class PinView extends SubsamplingScaleImageView {
 
                 case -106:
 
+                canvas.drawLine(vX2+60, vY2-20, vX2-140, vY2-20, paint);
 
                     break;
 
@@ -176,6 +179,436 @@ public class PinView extends SubsamplingScaleImageView {
                     break;
 
                 case -107:
+
+                    break;
+
+
+                    // new code
+                case 201:
+
+                    canvas.drawLine(vX-480, vY+240, vX+80, vY+240, paint);
+                    canvas.drawLine(vX-460, vY+220, vX-460, vY+380, paint);
+                    canvas.drawLine(vX-850, vY+370, vX-435, vY+370, paint);
+
+
+                    break;
+
+                case -201:
+                    canvas.drawLine(vX2-480, vY2+240, vX2+80, vY2+240, paint);
+                    canvas.drawLine(vX2-460, vY2+220, vX2-460, vY2+380, paint);
+                    canvas.drawLine(vX2-850, vY2+370, vX2-435, vY2+370, paint);
+
+                    break;
+
+              
+
+                  
+
+                case 202:
+
+                    canvas.drawLine(vX-280, vY+245, vX+80, vY+245, paint);
+                    canvas.drawLine(vX-290, vY+220, vX-290, vY+380, paint);
+                    canvas.drawLine(vX-700, vY+370, vX-265, vY+370, paint);
+
+                    break;
+
+                case -202:
+                    canvas.drawLine(vX2-280, vY2+245, vX2+80, vY2+245, paint);
+                    canvas.drawLine(vX2-290, vY2+220, vX2-290, vY2+380, paint);
+                    canvas.drawLine(vX2-700, vY2+370, vX2-265, vY2+370, paint);
+
+                    break;
+
+               
+
+                case 203:
+
+                    canvas.drawLine(vX-245, vY+25, vX+80, vY+25, paint);
+                    canvas.drawLine(vX-220, vY+25, vX-220, vY+175, paint);
+                    canvas.drawLine(vX-600, vY+170, vX-200, vY+170, paint);
+
+                    break;
+
+                case -203:
+
+
+                    canvas.drawLine(vX2-245, vY2+25, vX2+80, vY2+25, paint);
+                    canvas.drawLine(vX2-220, vY2+25, vX2-220, vY2+175, paint);
+                    canvas.drawLine(vX2-600, vY2+170, vX2-200, vY2+170, paint);
+
+                    break;
+
+               
+
+                case 204:
+                    canvas.drawLine(vX, vY+250, vX+450, vY+250, paint);
+
+                    break;
+
+                case -204:
+                    canvas.drawLine(vX2, vY2+250, vX2+450, vY2+250, paint);
+
+                    break;
+
+               
+
+                case 205:
+                    canvas.drawLine(vX+50, vY-20, vX-100, vY-20, paint);
+
+                    break;
+
+                case -205:
+                    canvas.drawLine(vX2+50, vY2-20, vX2-100, vY2-20, paint);
+
+                    break;
+
+              
+
+                case 206:
+                    canvas.drawLine(vX+50, vY+250, vX-100, vY+250, paint);
+
+                    break;
+
+                case -206:
+
+                    canvas.drawLine(vX2+50, vY2+250, vX2-100, vY2+250, paint);
+                    break;
+
+              
+
+                case 207:
+                    canvas.drawLine(vX+50, vY+250, vX-250, vY+250, paint);
+
+                    break;
+
+                case -207:
+                    canvas.drawLine(vX2+50, vY2+250, vX2-250, vY2+250, paint);
+                    break;
+
+               
+                case 208:
+
+                    canvas.drawLine(vX, vY+250, vX+270, vY+250, paint);
+
+                    break;
+
+                case -208:
+                    canvas.drawLine(vX2, vY2+250, vX2+270, vY2+250, paint);
+
+                    break;
+
+                
+
+                case 209:
+
+                    canvas.drawLine(vX, vY+250, vX+150, vY+250, paint);
+
+                    break;
+
+                case -209:
+                    canvas.drawLine(vX2, vY2+250, vX2+150, vY2+250, paint);
+
+                    break;
+
+               
+
+
+                case 210:
+                    canvas.drawLine(vX-245+80, vY+25, vX+80, vY+25, paint);
+                    canvas.drawLine(vX-220+80, vY+25, vX-220+80, vY+175, paint);
+                    canvas.drawLine(vX-600+80, vY+170, vX-200+80, vY+170, paint);
+
+                    break;
+
+                case -210:
+                    canvas.drawLine(vX2-245+80, vY2+25, vX2+80, vY2+25, paint);
+                    canvas.drawLine(vX2-220+80, vY2+25, vX2-220+80, vY2+175, paint);
+                    canvas.drawLine(vX2-600+80, vY2+170, vX2-200+80, vY2+170, paint);
+
+
+                    break;
+
+                
+                case 211:
+
+                    canvas.drawLine(vX-245-100, vY+25, vX+80, vY+25, paint);
+                    canvas.drawLine(vX-220-100, vY+25, vX-220-100, vY+175, paint);
+                    canvas.drawLine(vX-600-100, vY+170, vX-200-100, vY+170, paint);
+                    break;
+
+                case -211:
+                    canvas.drawLine(vX2-245-100, vY2+25, vX2+80, vY2+25, paint);
+                    canvas.drawLine(vX2-220-100, vY2+25, vX2-220-100, vY2+175, paint);
+                    canvas.drawLine(vX2-600-100, vY2+170, vX2-200-100, vY2+170, paint);
+
+                    break;
+
+               
+
+                case 212:
+
+                    canvas.drawLine(vX-245-250, vY+25, vX+80, vY+25, paint);
+                    canvas.drawLine(vX-220-250, vY+25, vX-220-250, vY+175, paint);
+                    canvas.drawLine(vX-600-250, vY+170, vX-200-250, vY+170, paint);
+                    break;
+
+                case -212:
+                    canvas.drawLine(vX2-245-250, vY2+25, vX2+80, vY2+25, paint);
+                    canvas.drawLine(vX2-220-250, vY2+25, vX2-220-250, vY2+175, paint);
+                    canvas.drawLine(vX2-600-250, vY2+170, vX2-200-250, vY2+170, paint);
+
+                    break;
+
+
+                case 301:
+
+                    canvas.drawLine(vX+20, vY+130, vX+20, vY+700, paint);
+                    canvas.drawLine(vX+45, vY+700, vX-320, vY+700, paint);
+
+                    break;
+
+                case -301:
+
+                    canvas.drawLine(vX2+20, vY2+130, vX2+20, vY2+700, paint);
+                    canvas.drawLine(vX2+45, vY2+700, vX2-320, vY2+700, paint);
+
+                    break;
+
+               
+
+                case 302:
+
+                    canvas.drawLine(vX-310+90, vY+225-220, vX+50, vY+225-220, paint);
+                    canvas.drawLine(vX-310+90, vY+200-220, vX-310+90, vY+400-220, paint);
+                    canvas.drawLine(vX-650+90, vY+375-220, vX-310+90, vY+375-220, paint);
+
+                    break;
+
+                case -302:
+                    canvas.drawLine(vX2-310+90, vY2+225-220, vX2+50, vY2+225-220, paint);
+                    canvas.drawLine(vX2-310+90, vY2+200-220, vX2-310+90, vY2+400-220, paint);
+                    canvas.drawLine(vX2-650+90, vY2+375-220, vX2-310+90, vY2+375-220, paint);
+
+
+                    break;
+
+                
+
+                case 303:
+                    canvas.drawLine(vX+50, vY+230, vX-50, vY+230, paint);
+
+                    break;
+
+                case -303:
+                    canvas.drawLine(vX2+50, vY2+230, vX2-50, vY2+230, paint);
+
+                    break;
+
+               
+
+                case 304:
+                    canvas.drawLine(vX-90-235+135, vY+155-180, vX+50, vY+155-180, paint);
+                    canvas.drawLine(vX+20-100-235+135, vY+130-180, vX+20-100-235+135, vY+700-180, paint);
+                    canvas.drawLine(vX+45-100-235+135, vY+700-180, vX-320-100-235+135, vY+700-180, paint);
+
+                    break;
+
+                case -304:
+                    canvas.drawLine(vX2-90-235+135, vY2+155-180, vX2+50, vY2+155-180, paint);
+                    canvas.drawLine(vX2+20-100-235+135, vY2+130-180, vX2+20-100-235+135, vY2+700-180, paint);
+                    canvas.drawLine(vX2+45-100-235+135, vY2+700-180, vX2-320-100-235+135, vY2+700-180, paint);
+
+
+                    break;
+
+               
+
+                case 305:
+                    canvas.drawLine(vX-20, vY+230, vX+300, vY+230, paint);
+
+                    break;
+
+                case -305:
+                    canvas.drawLine(vX2-20, vY2+230, vX2+300, vY2+230, paint);
+
+                    break;
+
+               
+
+                case 306:
+                    canvas.drawLine(vX-20, vY+230, vX+150, vY+230, paint);
+
+                    break;
+
+                case -306:
+                    canvas.drawLine(vX2-20, vY2+230, vX2+150, vY2+230, paint);
+
+                    break;
+
+                
+
+                case 307:
+                    canvas.drawLine(vX-20, vY+230, vX+620, vY+230, paint);
+
+                    break;
+
+                case -307:
+                    canvas.drawLine(vX2-20, vY2+230, vX2+620, vY2+230, paint);
+                    break;
+
+               
+
+                case 308:
+                    canvas.drawLine(vX-20, vY+230, vX+500, vY+230, paint);
+
+                    break;
+
+                case -308:
+                    canvas.drawLine(vX2-20, vY2+230, vX2+500, vY2+230, paint);
+
+                    break;
+
+                
+                case 309:
+
+                    canvas.drawLine(vX-310+170, vY+225-220, vX+50, vY+225-220, paint);
+                    canvas.drawLine(vX-310+170, vY+200-220, vX-310+170, vY+400-220, paint);
+                    canvas.drawLine(vX-650+170, vY+375-220, vX-310+170, vY+375-220, paint);
+
+                    break;
+
+                case -309:
+                    canvas.drawLine(vX2-310+170, vY2+225-220, vX2+50, vY2+225-220, paint);
+                    canvas.drawLine(vX2-310+170, vY2+200-220, vX2-310+170, vY2+400-220, paint);
+                    canvas.drawLine(vX2-650+170, vY2+375-220, vX2-310+170, vY2+375-220, paint);
+
+
+                    break;
+
+
+                case 310:
+
+                    canvas.drawLine(vX-310-150, vY+225-220, vX+50, vY+225-220, paint);
+                    canvas.drawLine(vX-310-150, vY+200-220, vX-310-150, vY+400-220, paint);
+                    canvas.drawLine(vX-650-150, vY+375-220, vX-310-150, vY+375-220, paint);
+
+                    break;
+
+
+
+                case -310:
+                    canvas.drawLine(vX2-310-150, vY2+225-220, vX2+50, vY2+225-220, paint);
+                    canvas.drawLine(vX2-310-150, vY2+200-220, vX2-310-150, vY2+400-220, paint);
+                    canvas.drawLine(vX2-650-150, vY2+375-220, vX2-310-150, vY2+375-220, paint);
+
+
+                    break;
+
+               
+
+
+                case 311:
+
+                    canvas.drawLine(vX-310-20, vY+225-220, vX+50, vY+225-220, paint);
+                    canvas.drawLine(vX-310-20, vY+200-220, vX-310-20, vY+400-220, paint);
+                    canvas.drawLine(vX-650-20, vY+375-220, vX-310-20, vY+375-220, paint);
+
+                    break;
+
+                case -311:
+                    canvas.drawLine(vX2-310-20, vY2+225-220, vX2+50, vY2+225-220, paint);
+                    canvas.drawLine(vX2-310-20, vY2+200-220, vX2-310-20, vY2+400-220, paint);
+                    canvas.drawLine(vX2-650-20, vY2+375-220, vX2-310-20, vY2+375-220, paint);
+
+
+                    break;
+
+                
+
+                case 312:
+                    canvas.drawLine(vX-90, vY+155, vX+50, vY+155, paint);
+                    canvas.drawLine(vX+20-100, vY+130, vX+20-100, vY+700, paint);
+                    canvas.drawLine(vX+45-100, vY+700, vX-320-100, vY+700, paint);
+
+                    break;
+
+                case -312:
+                    canvas.drawLine(vX2-90, vY2+155, vX2+50, vY2+155, paint);
+                    canvas.drawLine(vX2+20-100, vY2+130, vX2+20-100, vY2+700, paint);
+                    canvas.drawLine(vX2+45-100, vY2+700, vX2-320-100, vY2+700, paint);
+
+                    break;
+
+               
+                case 313:
+                    canvas.drawLine(vX-90-235, vY+155, vX+50, vY+155, paint);
+                    canvas.drawLine(vX+20-100-235, vY+130, vX+20-100-235, vY+700, paint);
+                    canvas.drawLine(vX+45-100-235, vY+700, vX-320-100-235, vY+700, paint);
+
+                    break;
+
+                case -313:
+                    canvas.drawLine(vX2-90-235, vY2+155, vX2+50, vY2+155, paint);
+                    canvas.drawLine(vX2+20-100-235, vY2+130, vX2+20-100-235, vY2+700, paint);
+                    canvas.drawLine(vX2+45-100-235, vY2+700, vX2-320-100-235, vY2+700, paint);
+
+
+                    break;
+
+               
+                case 314:
+                    canvas.drawLine(vX+50, vY-50, vX-50, vY-50, paint);
+
+
+                    break;
+
+                case -314:
+                    canvas.drawLine(vX2+50, vY2-50, vX2-50, vY2-50, paint);
+                    break;
+
+                
+
+
+                case 315:
+                    canvas.drawLine(vX-90-235+135+120, vY+155-180-35, vX+50, vY+155-180-35, paint);
+                    canvas.drawLine(vX+20-100-235+135+120, vY+130-180-35, vX+20-100-235+135+120, vY+700-180-35, paint);
+                    canvas.drawLine(vX+45-100-235+135+120, vY+700-180-35, vX-320-100-235+135+120, vY+700-180-35, paint);
+
+                    break;
+
+                case -315:
+                    canvas.drawLine(vX2-90-235+135+120, vY2+155-180-35, vX2+50, vY2+155-180-35, paint);
+                    canvas.drawLine(vX2+20-100-235+135+120, vY2+130-180-35, vX2+20-100-235+135+120, vY2+700-180-35, paint);
+                    canvas.drawLine(vX2+45-100-235+135+120, vY2+700-180-35, vX2-320-100-235+135+120, vY2+700-180-35, paint);
+
+
+                    break;
+
+               
+
+                case 316:
+                    canvas.drawLine(vX-310, vY+225, vX+50, vY+225, paint);
+                    canvas.drawLine(vX-310, vY+200, vX-310, vY+400, paint);
+                    canvas.drawLine(vX-650, vY+375, vX-310, vY+375, paint);
+
+                    break;
+
+                case -316:
+                    canvas.drawLine(vX2-310, vY2+225, vX2+50, vY2+225, paint);
+                    canvas.drawLine(vX2-310, vY2+200, vX2-310, vY2+400, paint);
+                    canvas.drawLine(vX2-650, vY2+375, vX2-310, vY2+375, paint);
+
+                    break;
+
+                
+                case 317:
+                    canvas.drawLine(vX+50, vY+230, vX-250, vY+230, paint);
+
+
+                    break;
+
+                case -317:
+                    canvas.drawLine(vX2+50, vY2+230, vX2-250, vY2+230, paint);
 
                     break;
 
